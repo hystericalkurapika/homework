@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blog Tugas Kuliah — Pilih Tugas</title>
+<meta name="description" content="Kumpulan blog tugas kuliah. Pilih salah satu frame untuk membuka blognya.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#tugas">Lewati ke daftar tugas</a>
+<header class="top">
+  <div class="wrap top-in">
+    <span class="brand">BLOG TUGAS KULIAH</span>
+    <nav aria-label="Navigasi utama"><a href="#tugas">Daftar tugas</a></nav>
+  </div>
+</header>
+<main>
+  <section class="wrap intro">
+    <span class="label">[ ARSIP TUGAS ]</span>
+    <h1>Pilih tugas yang ingin dibuka</h1>
+    <p class="lead">Setiap tugas punya blognya sendiri. Klik salah satu frame di bawah untuk membacanya.</p>
+  </section>
+
+  <section class="wrap" id="tugas" aria-label="Daftar tugas">
+    <div class="grid">
+
+      <article class="frame">
+        <a class="frame-link" href="the-computer-archive/index.html" aria-labelledby="t1">
+          <div class="collage" aria-hidden="false">
+            <figure class="c c1"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Colossus.jpg?width=700" alt="Colossus, komputer tabung vakum (Generasi 1)" loading="lazy"><figcaption>G1</figcaption></figure>
+            <figure class="c c2"><img src="the-computer-archive/computer_archive_assets/transistor.webp" alt="Transistor (Generasi 2)" loading="lazy"><figcaption>G2</figcaption></figure>
+            <figure class="c c3"><img src="the-computer-archive/computer_archive_assets/IC.jpg" alt="Chip sirkuit terpadu (Generasi 3)" loading="lazy"><figcaption>G3</figcaption></figure>
+            <figure class="c c4"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Altair_8800_Computer.jpg?width=700" alt="Altair 8800, komputer mikroprosesor (Generasi 4)" loading="lazy"><figcaption>G4</figcaption></figure>
+            <figure class="c c5"><img src="the-computer-archive/computer_archive_assets/AI.jpg" alt="Robot kecerdasan buatan (Generasi 5)" loading="lazy"><figcaption>G5</figcaption></figure>
+          </div>
+          <div class="body">
+            <span class="label">01 · ARSIKOM TUGAS 1 INDIVIDU</span>
+            <h2 id="t1">The Computer Archive</h2>
+            <p>Sejarah perkembangan komputer dari tabung vakum hingga kecerdasan buatan, lengkap dengan perbandingan lima generasi.</p>
+            <span class="go">Buka blog <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </article>
+
+      <article class="frame">
+        <a class="frame-link" href="tugas-2/index.html" aria-labelledby="t2">
+          <div class="collage logo-box">
+            <figure class="c logo"><img src="tugas-2/assets/github-logo.png" alt="Logo GitHub" width="900" height="327" loading="lazy"></figure>
+          </div>
+          <div class="body">
+            <span class="label">02 · IMK TUGAS 1 INDIVIDU</span>
+            <h2 id="t2">Analisis Usability GitHub</h2>
+            <p>Pengenalan konsep usability dan deskripsi aplikasi GitHub, dilengkapi tangkapan layar penggunaannya.</p>
+            <span class="go">Buka blog <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </section>
+</main>
+<footer class="wrap foot">
+  <span class="f-l">Salma Nur Safitri</span>
+  <span class="f-c">8020250200</span>
+  <span class="f-r">safitrinsalma.my.id</span>
+</footer>
+<script>
+document.querySelectorAll('.collage img').forEach(function(i){
+  i.addEventListener('error',function(){
+    if(i.src.indexOf('?width=')>-1){i.src=i.src.split('?')[0];return}
+    i.style.display='none';
+  },{once:false});
+});
+</script>
+</body>
+</html>
