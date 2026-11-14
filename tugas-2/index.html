@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Analisis Usability GitHub — Tugas 2</title>
+<meta name="description" content="Tugas 2 individu IMK: analisis usability aplikasi GitHub — pendahuluan, deskripsi aplikasi, dan tangkapan layar.">
+<meta name="theme-color" content="#F6C6D9">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg aria-hidden="true" focusable="false" height="0" style="position:absolute" width="0">
+<defs>
+<symbol id="i-star" viewbox="0 0 64 64"><polygon points="32,4 40,24 62,26 45,40 50,60 32,48 14,60 19,40 2,26 24,24"></polygon></symbol>
+<symbol id="i-person" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="20" r="8"></circle><path d="M14 54c2-14 10-18 18-18s16 4 18 18z"></path></g></symbol>
+<symbol id="i-abacus" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect height="44" rx="3" width="52" x="6" y="10"></rect><path d="M6 30h52M18 10v44M32 10v44M46 10v44"></path></g><g fill="currentColor" stroke="none"><circle cx="18" cy="20" r="4"></circle><circle cx="18" cy="38" r="4"></circle><circle cx="18" cy="46" r="4"></circle><circle cx="32" cy="22" r="4"></circle><circle cx="32" cy="40" r="4"></circle><circle cx="46" cy="20" r="4"></circle><circle cx="46" cy="38" r="4"></circle><circle cx="46" cy="46" r="4"></circle></g></symbol>
+<symbol id="i-rods" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect height="52" width="10" x="6" y="6"></rect><rect height="52" width="10" x="19" y="6"></rect><rect height="52" width="10" x="32" y="6"></rect><rect height="52" width="10" x="45" y="6"></rect><path d="M6 22l10-6M6 36l10-6M6 50l10-6M19 22l10-6M19 36l10-6M19 50l10-6M32 22l10-6M32 36l10-6M32 50l10-6M45 22l10-6M45 36l10-6M45 50l10-6"></path></g></symbol>
+<symbol id="i-slide" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect height="14" width="56" x="4" y="16"></rect><rect height="14" width="48" x="8" y="30"></rect><path d="M12 16v6M20 16v6M28 16v6M36 16v6M44 16v6M52 16v6M16 44v-6M24 44v-6M32 44v-6M40 44v-6M48 44v-6"></path></g></symbol>
+<symbol id="i-gear" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="13"></circle><circle cx="32" cy="32" r="4"></circle><path d="M32 6v8M32 50v8M6 32h8M50 32h8M13.6 13.6l5.7 5.7M44.7 44.7l5.7 5.7M50.4 13.6l-5.7 5.7M19.3 44.7l-5.7 5.7"></path></g></symbol>
+<symbol id="i-engine" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="22" r="9"></circle><circle cx="20" cy="22" r="3"></circle><circle cx="44" cy="22" r="9"></circle><circle cx="44" cy="22" r="3"></circle><circle cx="32" cy="44" r="9"></circle><circle cx="32" cy="44" r="3"></circle><path d="M6 58h52M20 10v-4M44 10v-4M32 32v-2"></path></g></symbol>
+<symbol id="i-tube" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 40V20a10 10 0 0 1 20 0v20z"></path><path d="M20 40h24v6H20z"></path><path d="M26 46v10M32 46v10M38 46v10M28 36V24M36 36V24"></path></g></symbol>
+<symbol id="i-transistor" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 36A16 16 0 0 1 48 36Z"></path><path d="M24 36v20M32 36v20M40 36v20"></path></g></symbol>
+<symbol id="i-chip" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect height="32" rx="2" width="32" x="16" y="16"></rect><path d="M24 8v8M32 8v8M40 8v8M24 48v8M32 48v8M40 48v8M8 24h8M8 32h8M8 40h8M48 24h8M48 32h8M48 40h8"></path><circle cx="23" cy="23" r="1.5"></circle></g></symbol>
+<symbol id="i-cpu" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect height="36" rx="2" width="36" x="14" y="14"></rect><rect height="18" width="18" x="23" y="23"></rect><path d="M22 6v8M32 6v8M42 6v8M22 50v8M32 50v8M42 50v8M6 22h8M6 32h8M6 42h8M50 22h8M50 32h8M50 42h8"></path></g></symbol>
+<symbol id="i-gui" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect height="40" rx="3" width="52" x="6" y="10"></rect><path d="M6 20h52"></path><path d="M28 28v16l4-4 4 8 3-1-4-8h6z"></path></g></symbol>
+<symbol id="i-ai" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 20L32 12M14 20L32 32M14 20L32 52M14 46L32 12M14 46L32 32M14 46L32 52M32 12L50 26M32 32L50 26M32 52L50 26M32 12L50 42M32 32L50 42M32 52L50 42"></path><circle cx="14" cy="20" r="5"></circle><circle cx="14" cy="46" r="5"></circle><circle cx="32" cy="12" r="5"></circle><circle cx="32" cy="32" r="5"></circle><circle cx="32" cy="52" r="5"></circle><circle cx="50" cy="26" r="5"></circle><circle cx="50" cy="42" r="5"></circle></g></symbol>
+
+<symbol id="star" viewBox="0 0 60 60"><defs><linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBD3E1"/><stop offset=".5" stop-color="#EFA0BE"/><stop offset="1" stop-color="#E38BAF"/></linearGradient></defs><path d="M30 3l7.200 17.300 18.700 1.500-14.300 12.200 4.400 18.200L30 42.200 14 52.200l4.400-18.200L4.100 21.800l18.700-1.500Z" fill="url(#sg)" stroke="#fff" stroke-width="2" stroke-linejoin="round"/><path d="M22 18l8-8" stroke="#fff" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/></symbol>
+<symbol id="bow" viewBox="0 0 80 60"><g fill="#F7C9DA" stroke="#E59BB8" stroke-width="2" stroke-linejoin="round"><path d="M40 30C30 10 6 6 6 24c0 16 24 12 34 6Z"/><path d="M40 30C50 10 74 6 74 24c0 16-24 12-34 6Z"/><path d="M40 30c-6 8-8 20-12 28M40 30c6 8 8 20 12 28" fill="none"/><circle cx="40" cy="30" r="7" fill="#F3B4CB"/></g></symbol>
+<symbol id="seal" viewBox="0 0 64 64"><defs><radialGradient id="sl" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FDE3EC"/><stop offset=".6" stop-color="#F4B6CE"/><stop offset="1" stop-color="#E99BB9"/></radialGradient></defs><path d="M32 3c5 0 7 4 11 5s8 0 10 4-1 8 1 12 7 6 6 11-6 6-8 10-1 9-6 11-8-1-12-1-8 3-12 1-3-8-6-11-8-5-8-10 4-7 6-11 0-8 2-12 7-5 11-5 7-4 11-4Z" fill="url(#sl)"/><g fill="#FBD3E1" stroke="#E599B7" stroke-width="1.5" stroke-linejoin="round"><path d="M32 32C27 22 15 20 15 29c0 8 12 6 17 3Z"/><path d="M32 32C37 22 49 20 49 29c0 8-12 6-17 3Z"/><circle cx="32" cy="32" r="4.500"/></g></symbol>
+<symbol id="gem" viewBox="0 0 60 60"><defs><radialGradient id="gm" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#EBDDFB"/><stop offset=".6" stop-color="#B998E0"/><stop offset="1" stop-color="#9373C7"/></radialGradient></defs><circle cx="30" cy="30" r="26" fill="url(#gm)" stroke="#fff" stroke-width="3"/><path d="M30 41c-8-6-11-9-11-13a6 6 0 0 1 11-3 6 6 0 0 1 11 3c0 4-3 7-11 13Z" fill="#fff" fill-opacity=".85"/><ellipse cx="20" cy="18" rx="6" ry="3.500" fill="#fff" fill-opacity=".6" transform="rotate(-35 20 18)"/></symbol>
+</defs>
+</svg>
+<a class="skip" href="#main">Lewati ke konten utama</a>
+<div aria-hidden="true" class="progress"><i></i></div>
+<div class="page">
+<header class="site-header">
+<a aria-label="Analisis Usability GitHub — ke atas" class="brand" href="#home"><svg class="seal" aria-hidden="true"><use href="#seal"/></svg><span>ANALISIS USABILITY</span></a>
+<button aria-controls="nav" aria-expanded="false" aria-label="Buka menu navigasi" class="nav-toggle" type="button"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
+<nav aria-label="Navigasi utama" class="nav" id="nav">
+<ul>
+<li><a data-nav="pendahuluan" href="#pendahuluan">Pendahuluan</a></li>
+<li><a data-nav="aplikasi" href="#aplikasi">Aplikasi</a></li>
+<li><a data-nav="analisis" href="#analisis">Analisis</a></li>
+<li><a data-nav="kekurangan" href="#kekurangan">Kekurangan</a></li>
+<li><a data-nav="saran" href="#saran">Saran</a></li>
+<li><a data-nav="kesimpulan" href="#kesimpulan">Kesimpulan</a></li>
+<li><a data-nav="screenshot" href="#screenshot">Screenshot</a></li>
+<li class="nav-back"><a href="../index.html">← Semua Tugas</a></li>
+</ul>
+</nav>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero" id="home">
+<div class="hero-copy">
+<span class="badge">★ IMK · Tugas 1 Individu</span>
+<h1 id="hero-title"><span class="s1">Analisis</span><span class="s2">Usability</span><span class="s3">GitHub</span></h1>
+<p class="desc">Mengenal konsep usability dan melihat langsung bagaimana GitHub dipakai sebagai aplikasi sehari-hari, mulai dari pendahuluan, deskripsi aplikasi, analisis, kekurangan, dan saran perbaikan, hingga tangkapan layar penggunaannya.</p>
+<div class="cta"><a class="btn" href="#pendahuluan">Mulai Membaca</a></div>
+</div>
+<figure class="house" aria-label="Logo GitHub">
+<span class="roof" aria-hidden="true"></span>
+<div class="frame"><div class="scene">
+<i class="cloud c1"></i><i class="cloud c2"></i>
+<svg class="hills" viewBox="0 0 400 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70C70 20 150 30 230 62S350 80 400 50V140H0Z" fill="#A9C94E"/><path d="M0 100C80 70 170 90 250 84S350 70 400 90V140H0Z" fill="#8FB236"/></svg>
+<div class="logo-card"><div class="mark3d" role="img" aria-label="Ikon GitHub 3D berputar"><img class="mark-fallback" alt="" src="assets/github-mark.png"></div><img class="wordmark" alt="GitHub" src="assets/github-teks.png"></div>
+</div></div>
+<svg class="stk st-gem" aria-hidden="true"><use href="#gem"/></svg>
+</figure>
+</section>
+
+
+<section aria-labelledby="pendahuluan-title" class="sec pg-stripes" id="pendahuluan">
+<div class="sec-head reveal"><span class="kicker">Bagian 1</span><h2 id="pendahuluan-title">Pendahuluan</h2></div>
+<article class="card lime solo reveal">
+<p><strong>Usability</strong> (Kebergunaan) merupakan tolok ukur yang mendeskripsikan tingkat kemudahan pengguna dalam mencapai tujuannya saat mengoperasikan suatu sistem atau layanan. Evaluasi usability umumnya dilakukan melalui metode <em>usability testing</em>, yang mengukur metrik seperti tingkat keberhasilan (<em>success rate</em>) dan tingkat kepuasan pengguna (<em>customer satisfaction</em>).</p>
+<p>Dalam konteks yang lebih luas, usability merupakan salah satu komponen utama dari <em>User Experience</em> (UX). Jika UX mencakup perancangan pengalaman pengguna secara menyeluruh, usability berfokus pada aspek teknis untuk memastikan bahwa sistem berjalan seoptimal dan seefisien mungkin.</p>
+<p class="srcline">Sumber: <a href="https://www.usability.gov/what-and-why/usability-evaluation.html" rel="noopener" target="_blank">usability.gov — Usability Evaluation</a></p>
+</article>
+</section>
+
+<section aria-labelledby="aplikasi-title" class="sec pg-dots" id="aplikasi">
+<div class="sec-head reveal"><span class="kicker">Bagian 2</span><h2 id="aplikasi-title">Deskripsi Aplikasi</h2></div>
+<article class="card peach solo reveal">
+<p>Aplikasi yang saya pilih untuk dianalisis adalah <strong>GitHub</strong>. GitHub adalah platform khusus pengembang (<em>developer</em>) yang dibuat dengan terinspirasi dari cara kerja para programmer.</p>
+<p>Mulai dari proyek <em>open source</em> hingga kebutuhan bisnis, pengguna dapat menyimpan (<em>hosting</em>) dan meninjau kode, mengelola proyek, serta membangun perangkat lunak bersama lebih dari 56 juta pengguna di seluruh dunia.</p>
+<p class="srcline">Sumber: <a href="https://www.dicoding.com/blog/apa-itu-github/" rel="noopener" target="_blank">Dicoding — Apa Itu GitHub?</a></p>
+</article>
+</section>
+
+<section aria-labelledby="analisis-title" class="sec pg-sky" id="analisis">
+<div class="sec-head reveal"><span class="kicker">Bagian 3</span><h2 id="analisis-title">Analisis Usability</h2><p class="lead">Dinilai dari tiga aspek: efektivitas, efisiensi, dan kepuasan.</p></div>
+<div class="acc">
+<details class="card lime reveal">
+<summary><span class="tag">Efektivitas</span><h3>Apakah tujuan tercapai?</h3><span class="brief">Semua tugas utama berhasil saya selesaikan sampai tuntas dan hasilnya langsung terlihat.</span></summary>
+<div class="more">
+<p>Tugas-tugas utama dapat saya selesaikan sampai tuntas, yaitu membuat repositori baru, mengunggah berkas dan melihat riwayat <em>commit</em>, mengatur repositori, hingga memantau proses <em>pages build and deployment</em>.</p>
+<p>Setiap hasil langsung terlihat di layar, sehingga pengguna tahu bahwa tindakannya berhasil.</p>
+</div>
+</details>
+<details class="card mustard reveal">
+<summary><span class="tag">Efisiensi</span><h3>Seberapa cepat dan ringkas?</h3><span class="brief">Alurnya ringkas dan menu tertata rapi, tetapi mengunggah berkas masih butuh beberapa langkah.</span></summary>
+<div class="more">
+<p>Membuat repositori hanya butuh satu formulir singkat. Fitur utama tersusun dalam satu baris tab, yaitu <em>Code</em>, <em>Issues</em>, <em>Pull requests</em>, <em>Actions</em>, dan <em>Settings</em>, serta ada kolom pencarian di bagian atas.</p>
+<p>Namun, mengunggah berkas lewat web masih butuh beberapa langkah: pilih berkas, tulis pesan <em>commit</em>, lalu simpan.</p>
+</div>
+</details>
+<details class="card peach reveal">
+<summary><span class="tag">Kepuasan</span><h3>Apakah nyaman dipakai?</h3><span class="brief">Tampilannya bersih dan konsisten, tetapi istilah teknis dan bahasa Inggris bisa membingungkan pemula.</span></summary>
+<div class="more">
+<p>Tampilannya bersih, konsisten antarhalaman, dan terasa familier karena pola menu yang sama muncul di setiap repositori. Halaman kosong seperti <em>Issues</em> dan <em>Notifications</em> pun tidak membingungkan.</p>
+<p>Rasa nyaman berkurang bagi pemula karena banyak istilah teknis dan antarmuka berbahasa Inggris.</p>
+</div>
+</details>
+<details class="card mustard reveal">
+<summary><span class="tag">Pertanyaan panduan</span><h3>Apakah aplikasi mudah digunakan?</h3></summary>
+<div class="more"><p>Tergantung penggunanya. Bagi pengguna baru, GitHub tetap butuh waktu untuk dipahami, terutama istilah seperti <em>repository</em>, <em>commit</em>, dan <em>branch</em>. Namun dari pengalaman saya memakainya, aplikasi ini cukup mudah digunakan.</p></div>
+</details>
+<details class="card fern reveal">
+<summary><span class="tag">Pertanyaan panduan</span><h3>Apakah navigasi jelas?</h3></summary>
+<div class="more"><p>Sangat jelas. Tab dan menu diberi label yang konsisten dan selalu berada di posisi yang sama. Hanya saja, saat dibuka lewat HP, navigasinya terlihat sangat penuh.</p></div>
+</details>
+<details class="card lime reveal">
+<summary><span class="tag">Pertanyaan panduan</span><h3>Apakah <em>user flow</em> sederhana?</h3></summary>
+<div class="more"><p>Cukup sederhana, misalnya alur membuat repositori yang hanya satu halaman. Alur yang lebih lanjut, seperti <em>Actions</em> dan <em>Settings</em>, terasa lebih rumit.</p></div>
+</details>
+<details class="card peach reveal">
+<summary><span class="tag">Pertanyaan panduan</span><h3>Apakah pengguna merasa nyaman?</h3></summary>
+<div class="more"><p>Setelah terbiasa dengan fungsi dan tampilannya, pengguna akan merasa nyaman. Akan selalu ada fitur yang belum pernah ditemukan, dan saat dicoba, fitur itu membuat pengguna senang dengan adanya aplikasi ini.</p></div>
+</details>
+</div>
+
+</section>
+
+<section aria-labelledby="kekurangan-title" class="sec pg-pink" id="kekurangan">
+<div class="sec-head reveal"><span class="kicker">Bagian 4</span><h2 id="kekurangan-title">Kekurangan Sistem</h2><p class="lead">Masalah usability yang saya temukan.</p></div>
+<ol class="issues">
+<li class="card sky reveal"><b>1</b><div><h3>Istilah teknis untuk pemula</h3><p>Istilah seperti <em>repository</em>, <em>commit</em>, <em>branch</em>, dan <em>pull request</em> dipakai tanpa penjelasan, sehingga pengguna baru bisa kebingungan.</p></div></li>
+<li class="card lime reveal"><b>2</b><div><h3>Antarmuka berbahasa Inggris</h3><p>Semua teks pada tampilan yang saya gunakan berbahasa Inggris, yang menyulitkan pengguna yang belum terbiasa.</p></div></li>
+<li class="card fern reveal"><b>3</b><div><h3>Pengaturan terlalu banyak</h3><p>Halaman <em>Settings</em> memuat banyak sekali menu di bilah samping, sehingga pengguna sulit menemukan opsi yang dicari.</p></div></li>
+<li class="card mustard reveal"><b>4</b><div><h3>Halaman kosong kurang membimbing</h3><p>Pada <em>Issues</em>, hasil yang kosong hanya menampilkan "No results matched your search", tanpa petunjuk langkah berikutnya.</p></div></li>
+<li class="card fern reveal"><b>5</b><div><h3>Beranda padat fitur</h3><p>Dashboard menampilkan banyak elemen sekaligus, seperti kolom <em>Ask anything</em>, pintasan, dan kabar terbaru, yang dapat mengalihkan fokus pengguna baru.</p></div></li>
+</ol>
+</section>
+
+<section aria-labelledby="saran-title" class="sec pg-green" id="saran">
+<div class="sec-head reveal"><span class="kicker">Bagian 5</span><h2 id="saran-title">Saran Perbaikan</h2><p class="lead">Solusi usability untuk masing-masing masalah.</p></div>
+<ol class="issues">
+<li class="card sky reveal"><b>1</b><div><h3>Beri penjelasan istilah</h3><p>Tambahkan <em>tooltip</em> atau panduan singkat (<em>onboarding</em>) yang menjelaskan istilah teknis saat pertama kali muncul.</p></div></li>
+<li class="card fern reveal"><b>2</b><div><h3>Sediakan bahasa Indonesia</h3><p>Sediakan pilihan bahasa pada antarmuka, termasuk bahasa Indonesia, agar lebih mudah dipahami pengguna lokal.</p></div></li>
+<li class="card peach reveal"><b>3</b><div><h3>Sederhanakan Settings</h3><p>Kelompokkan opsi menjadi kategori yang lebih ringkas dan tambahkan kolom pencarian di dalam halaman pengaturan.</p></div></li>
+<li class="card mustard reveal"><b>4</b><div><h3>Perkaya halaman kosong</h3><p>Tampilkan pesan yang menjelaskan penyebab hasil kosong beserta tombol aksi, misalnya "Buat issue baru" atau "Hapus filter".</p></div></li>
+<li class="card fern reveal"><b>5</b><div><h3>Sediakan tampilan sederhana</h3><p>Tawarkan mode beranda ringkas yang hanya menonjolkan aksi utama, seperti membuat repositori dan melihat repositori terakhir.</p></div></li>
+</ol>
+</section>
+
+<section aria-labelledby="kesimpulan-title" class="sec pg-blue" id="kesimpulan">
+<div class="sec-head reveal"><span class="kicker">Bagian 6</span><h2 id="kesimpulan-title">Kesimpulan</h2></div>
+<article class="card mustard solo reveal">
+<p>Dengan adanya GitHub, pekerjaan programmer menjadi lebih mudah. GitHub memiliki berbagai manfaat, seperti memudahkan kolaborasi antarprogrammer, menyimpan kode secara online, melacak perubahan kode, mencadangkan proyek, serta berbagi dan mengembangkan proyek bersama.</p>
+<p>Oleh karena itu, GitHub menjadi platform yang membantu meningkatkan efisiensi, produktivitas, dan kualitas pekerjaan programmer. Pada akhirnya, GitHub bukan hanya sekadar tempat menyimpan kode, tetapi juga menjadi sarana bagi programmer untuk terus belajar, berkolaborasi, dan menciptakan inovasi dalam dunia teknologi.</p>
+</article>
+</section>
+
+<section aria-labelledby="screenshot-title" class="sec pg-folder" id="screenshot">
+<div class="sec-head reveal"><span class="kicker">Bagian 7</span><h2 id="screenshot-title">Screenshot Aplikasi</h2><p class="lead">Geser untuk melihat gambar lain, klik gambar untuk memperbesar.</p></div>
+<div class="deck" role="region" aria-roledescription="carousel" aria-label="Screenshot aplikasi">
+<div class="track" tabindex="0">
+<figure class="photo reveal"><button type="button" class="zoom" data-zoom aria-haspopup="dialog"><img src="assets/beranda-github.jpg" width="1400" height="735" alt="Halaman beranda github.com sebelum masuk akun" loading="lazy"></button><figcaption><b>Gambar 1.</b> Halaman beranda <i>github.com</i> sebelum masuk akun.</figcaption></figure>
+<figure class="photo reveal"><button type="button" class="zoom" data-zoom aria-haspopup="dialog"><img src="assets/beranda-dashboard.jpg" width="1400" height="735" alt="Halaman beranda (Dashboard) GitHub setelah masuk akun" loading="lazy"></button><figcaption><b>Gambar 2.</b> Beranda (Dashboard) GitHub setelah masuk akun.</figcaption></figure>
+<figure class="photo reveal"><button type="button" class="zoom" data-zoom aria-haspopup="dialog"><img src="assets/buat-repositori.jpg" width="1400" height="735" alt="Halaman Create a new repository di GitHub" loading="lazy"></button><figcaption><b>Gambar 3.</b> Halaman <i>Create a new repository</i> untuk membuat repositori baru.</figcaption></figure>
+<figure class="photo reveal"><button type="button" class="zoom" data-zoom aria-haspopup="dialog"><img src="assets/halaman-repositori.jpg" width="1400" height="735" alt="Halaman repositori dengan tab Code, Issues, Pull requests, dan daftar berkas" loading="lazy"></button><figcaption><b>Gambar 4.</b> Halaman repositori pada tab <i>Code</i>, berisi daftar berkas dan riwayat <i>commit</i>.</figcaption></figure>
+<figure class="photo reveal"><button type="button" class="zoom" data-zoom aria-haspopup="dialog"><img src="assets/pengaturan-repositori.jpg" width="1400" height="735" alt="Halaman Settings bagian General pada repositori" loading="lazy"></button><figcaption><b>Gambar 5.</b> Halaman <i>Settings</i> (pengaturan umum) pada repositori.</figcaption></figure>
+<figure class="photo reveal"><button type="button" class="zoom" data-zoom aria-haspopup="dialog"><img src="assets/github-actions.jpg" width="1400" height="735" alt="Tab Actions menampilkan riwayat pages build and deployment" loading="lazy"></button><figcaption><b>Gambar 6.</b> Tab <i>Actions</i> yang menampilkan riwayat proses <i>pages build and deployment</i>.</figcaption></figure>
+<figure class="photo reveal"><button type="button" class="zoom" data-zoom aria-haspopup="dialog"><img src="assets/halaman-issues.jpg" width="1400" height="735" alt="Halaman Issues bagian Assigned to me" loading="lazy"></button><figcaption><b>Gambar 7.</b> Halaman <i>Issues</i> pada bagian <i>Assigned to me</i>.</figcaption></figure>
+<figure class="photo reveal"><button type="button" class="zoom" data-zoom aria-haspopup="dialog"><img src="assets/notifikasi.jpg" width="1400" height="735" alt="Halaman Notifications (kotak masuk notifikasi) GitHub" loading="lazy"></button><figcaption><b>Gambar 8.</b> Halaman <i>Notifications</i> (kotak masuk notifikasi).</figcaption></figure>
+</div>
+<div class="deck-ui"><button class="deck-btn prev" type="button" aria-label="Gambar sebelumnya">‹</button><span class="deck-count" aria-live="polite">1 / 8</span><button class="deck-btn next" type="button" aria-label="Gambar berikutnya">›</button></div>
+</div>
+</section>
+<section class="cta-band reveal" aria-label="Tugas lainnya"><div><h2>Ada tugas lainnya</h2><p>Lihat daftar semua tugas yang sudah dikerjakan.</p></div><a class="btn" href="../index.html">Semua Tugas</a></section>
+</main>
+</div>
+<button aria-label="Kembali ke atas" class="totop" type="button">↑</button>
+<dialog aria-label="Pratinjau foto" id="lightbox">
+<div class="lb">
+<div class="lb-bar">
+<span aria-live="polite" class="lb-count"></span>
+<button aria-label="Tutup pratinjau" class="lb-close" type="button">✕ Tutup</button>
+</div>
+<figure><img alt="" src=""/><figcaption></figcaption></figure>
+<div class="lb-bar">
+<button aria-label="Foto sebelumnya" class="lb-prev" type="button">← Sebelumnya</button>
+<button aria-label="Foto berikutnya" class="lb-next" type="button">Berikutnya →</button>
+</div>
+</div>
+</dialog>
+<script src="script.js"></script>
+<script defer src="assets/logo3d.js"></script>
+</body>
+</html>
