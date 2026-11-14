@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10 Kesalahan Desain Web — Tugas 3</title>
+<meta name="description" content="Tugas 2 individu IMK: analisis usability aplikasi GitHub — pendahuluan, deskripsi aplikasi, dan tangkapan layar.">
+<meta name="theme-color" content="#E2D5F2">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg aria-hidden="true" focusable="false" height="0" style="position:absolute" width="0">
+<defs>
+<symbol id="i-star" viewbox="0 0 64 64"><polygon points="32,4 40,24 62,26 45,40 50,60 32,48 14,60 19,40 2,26 24,24"></polygon></symbol>
+<symbol id="i-person" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="20" r="8"></circle><path d="M14 54c2-14 10-18 18-18s16 4 18 18z"></path></g></symbol>
+<symbol id="i-abacus" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect height="44" rx="3" width="52" x="6" y="10"></rect><path d="M6 30h52M18 10v44M32 10v44M46 10v44"></path></g><g fill="currentColor" stroke="none"><circle cx="18" cy="20" r="4"></circle><circle cx="18" cy="38" r="4"></circle><circle cx="18" cy="46" r="4"></circle><circle cx="32" cy="22" r="4"></circle><circle cx="32" cy="40" r="4"></circle><circle cx="46" cy="20" r="4"></circle><circle cx="46" cy="38" r="4"></circle><circle cx="46" cy="46" r="4"></circle></g></symbol>
+<symbol id="i-rods" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect height="52" width="10" x="6" y="6"></rect><rect height="52" width="10" x="19" y="6"></rect><rect height="52" width="10" x="32" y="6"></rect><rect height="52" width="10" x="45" y="6"></rect><path d="M6 22l10-6M6 36l10-6M6 50l10-6M19 22l10-6M19 36l10-6M19 50l10-6M32 22l10-6M32 36l10-6M32 50l10-6M45 22l10-6M45 36l10-6M45 50l10-6"></path></g></symbol>
+<symbol id="i-slide" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect height="14" width="56" x="4" y="16"></rect><rect height="14" width="48" x="8" y="30"></rect><path d="M12 16v6M20 16v6M28 16v6M36 16v6M44 16v6M52 16v6M16 44v-6M24 44v-6M32 44v-6M40 44v-6M48 44v-6"></path></g></symbol>
+<symbol id="i-gear" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="13"></circle><circle cx="32" cy="32" r="4"></circle><path d="M32 6v8M32 50v8M6 32h8M50 32h8M13.6 13.6l5.7 5.7M44.7 44.7l5.7 5.7M50.4 13.6l-5.7 5.7M19.3 44.7l-5.7 5.7"></path></g></symbol>
+<symbol id="i-engine" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="22" r="9"></circle><circle cx="20" cy="22" r="3"></circle><circle cx="44" cy="22" r="9"></circle><circle cx="44" cy="22" r="3"></circle><circle cx="32" cy="44" r="9"></circle><circle cx="32" cy="44" r="3"></circle><path d="M6 58h52M20 10v-4M44 10v-4M32 32v-2"></path></g></symbol>
+<symbol id="i-tube" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 40V20a10 10 0 0 1 20 0v20z"></path><path d="M20 40h24v6H20z"></path><path d="M26 46v10M32 46v10M38 46v10M28 36V24M36 36V24"></path></g></symbol>
+<symbol id="i-transistor" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 36A16 16 0 0 1 48 36Z"></path><path d="M24 36v20M32 36v20M40 36v20"></path></g></symbol>
+<symbol id="i-chip" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect height="32" rx="2" width="32" x="16" y="16"></rect><path d="M24 8v8M32 8v8M40 8v8M24 48v8M32 48v8M40 48v8M8 24h8M8 32h8M8 40h8M48 24h8M48 32h8M48 40h8"></path><circle cx="23" cy="23" r="1.5"></circle></g></symbol>
+<symbol id="i-cpu" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect height="36" rx="2" width="36" x="14" y="14"></rect><rect height="18" width="18" x="23" y="23"></rect><path d="M22 6v8M32 6v8M42 6v8M22 50v8M32 50v8M42 50v8M6 22h8M6 32h8M6 42h8M50 22h8M50 32h8M50 42h8"></path></g></symbol>
+<symbol id="i-gui" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect height="40" rx="3" width="52" x="6" y="10"></rect><path d="M6 20h52"></path><path d="M28 28v16l4-4 4 8 3-1-4-8h6z"></path></g></symbol>
+<symbol id="i-ai" viewbox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 20L32 12M14 20L32 32M14 20L32 52M14 46L32 12M14 46L32 32M14 46L32 52M32 12L50 26M32 32L50 26M32 52L50 26M32 12L50 42M32 32L50 42M32 52L50 42"></path><circle cx="14" cy="20" r="5"></circle><circle cx="14" cy="46" r="5"></circle><circle cx="32" cy="12" r="5"></circle><circle cx="32" cy="32" r="5"></circle><circle cx="32" cy="52" r="5"></circle><circle cx="50" cy="26" r="5"></circle><circle cx="50" cy="42" r="5"></circle></g></symbol>
+
+<symbol id="star" viewBox="0 0 60 60"><defs><linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBD3E1"/><stop offset=".5" stop-color="#EFA0BE"/><stop offset="1" stop-color="#E38BAF"/></linearGradient></defs><path d="M30 3l7.200 17.300 18.700 1.500-14.300 12.200 4.400 18.200L30 42.200 14 52.200l4.400-18.200L4.100 21.800l18.700-1.500Z" fill="url(#sg)" stroke="#fff" stroke-width="2" stroke-linejoin="round"/><path d="M22 18l8-8" stroke="#fff" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/></symbol>
+<symbol id="bow" viewBox="0 0 80 60"><g fill="#F7C9DA" stroke="#E59BB8" stroke-width="2" stroke-linejoin="round"><path d="M40 30C30 10 6 6 6 24c0 16 24 12 34 6Z"/><path d="M40 30C50 10 74 6 74 24c0 16-24 12-34 6Z"/><path d="M40 30c-6 8-8 20-12 28M40 30c6 8 8 20 12 28" fill="none"/><circle cx="40" cy="30" r="7" fill="#F3B4CB"/></g></symbol>
+<symbol id="seal" viewBox="0 0 64 64"><defs><radialGradient id="sl" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#FDE3EC"/><stop offset=".6" stop-color="#F4B6CE"/><stop offset="1" stop-color="#E99BB9"/></radialGradient></defs><path d="M32 3c5 0 7 4 11 5s8 0 10 4-1 8 1 12 7 6 6 11-6 6-8 10-1 9-6 11-8-1-12-1-8 3-12 1-3-8-6-11-8-5-8-10 4-7 6-11 0-8 2-12 7-5 11-5 7-4 11-4Z" fill="url(#sl)"/><g fill="#FBD3E1" stroke="#E599B7" stroke-width="1.5" stroke-linejoin="round"><path d="M32 32C27 22 15 20 15 29c0 8 12 6 17 3Z"/><path d="M32 32C37 22 49 20 49 29c0 8-12 6-17 3Z"/><circle cx="32" cy="32" r="4.500"/></g></symbol>
+<symbol id="gem" viewBox="0 0 60 60"><defs><radialGradient id="gm" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#EBDDFB"/><stop offset=".6" stop-color="#B998E0"/><stop offset="1" stop-color="#9373C7"/></radialGradient></defs><circle cx="30" cy="30" r="26" fill="url(#gm)" stroke="#fff" stroke-width="3"/><path d="M30 41c-8-6-11-9-11-13a6 6 0 0 1 11-3 6 6 0 0 1 11 3c0 4-3 7-11 13Z" fill="#fff" fill-opacity=".85"/><ellipse cx="20" cy="18" rx="6" ry="3.500" fill="#fff" fill-opacity=".6" transform="rotate(-35 20 18)"/></symbol>
+</defs>
+</svg>
+<a class="skip" href="#main">Lewati ke konten utama</a>
+<div aria-hidden="true" class="progress"><i></i></div>
+<div class="page">
+<header class="site-header">
+<a aria-label="10 Kesalahan Desain Web — ke atas" class="brand" href="#home"><svg class="seal" aria-hidden="true"><use href="#seal"/></svg><span>10 KESALAHAN DESAIN WEB</span></a>
+<button aria-controls="nav" aria-expanded="false" aria-label="Buka menu navigasi" class="nav-toggle" type="button"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
+<nav aria-label="Navigasi utama" class="nav" id="nav"><ul><li><a data-nav="pendahuluan" href="#pendahuluan">Pendahuluan</a></li><li><a data-nav="kesalahan" href="#kesalahan">10 Kesalahan</a></li><li><a data-nav="contoh" href="#contoh">Contoh</a></li><li><a data-nav="kesimpulan" href="#kesimpulan">Kesimpulan</a></li><li class="nav-back"><a href="../index.html">← Semua Tugas</a></li></ul></nav>
+</header>
+<main id="main">
+<section aria-labelledby="hero-title" class="hero" id="home">
+<div class="hero-copy">
+<span class="badge">★ IMK · Tugas 3 Individu</span>
+<h1 id="hero-title"><span class="s1">10 Kesalahan</span><span class="s2">Desain</span><span class="s3">Web</span></h1>
+<p class="desc">Penjelasan Web Design Mistakes (2021) dari video pembelajaran Jacob Nielsen, dirangkum dalam Bahasa Indonesia.</p>
+<div class="cta"><a class="btn" href="#pendahuluan">Mulai Membaca</a></div>
+</div>
+<figure class="collage" aria-label="Ilustrasi jendela browser 10 mistakes">
+<div class="bwin">
+<div class="bw-top"><b>10mistakes.web</b><span>home</span><span class="on">notes</span></div>
+<div class="bw-main"><div class="warn" aria-hidden="true">!</div><b class="big">10</b><div class="tiles" aria-hidden="true"><i class="t0" style="--r:-6deg">m</i><i class="t1" style="--r:4deg">i</i><i class="t2" style="--r:-3deg">s</i><i class="t0" style="--r:6deg">t</i><i class="t1" style="--r:-5deg">a</i><i class="t2" style="--r:3deg">k</i><i class="t0" style="--r:-4deg">e</i><i class="t1" style="--r:5deg">s</i></div></div>
+</div>
+<svg class="star a" aria-hidden="true"><use href="#i-star"/></svg><svg class="star b" aria-hidden="true"><use href="#i-star"/></svg><svg class="star c" aria-hidden="true"><use href="#i-star"/></svg>
+</figure>
+</section>
+
+<section aria-labelledby="pendahuluan-title" class="sec pg-stripes" id="pendahuluan">
+<div class="sec-head reveal"><span class="kicker">Bagian 1</span><h2 id="pendahuluan-title">Pendahuluan</h2></div>
+<article class="card sky solo reveal">
+<p>Video ini adalah keynote Jakob Nielsen dari Nielsen Norman Group (NN/g) di <em>Virtual UX Conference</em> 2021, berdurasi sekitar 20 menit. Nielsen menjelaskan 10 kesalahan desain web yang masih sering muncul. Banyak kesalahan lama sudah hilang karena teknologi dan pengguna makin maju, tetapi sebagian masih muncul di daftar 2021, dan menurutnya itu memalukan.</p>
+<p>Ia menjelaskan tiga penyebab situs menjadi jelek:</p>
+<div class="trio">
+<section class="tri evil" aria-labelledby="t-evil"><span class="tn">1</span><h3 id="t-evil">Evil design</h3><p>Sengaja merugikan pengguna, sehingga bukan “kesalahan” dan tidak masuk daftar.</p></section>
+<section class="tri stupid" aria-labelledby="t-stupid"><span class="tn">2</span><h3 id="t-stupid">Stupid design</h3><p>Terjadi saat tim tidak tahu bahwa desainnya buruk, jadi tidak diperbaiki.</p></section>
+<section class="tri lazy" aria-labelledby="t-lazy"><span class="tn">3</span><h3 id="t-lazy">Lazy design</h3><p>Terjadi saat tim tahu desainnya buruk, tetapi tidak sempat memperbaiki.</p></section>
+</div>
+<p class="exnote">Contoh evil design: Amazon yang mudah untuk berlangganan tetapi sulit untuk berhenti.</p>
+<p>Sebuah kesalahan masuk daftar “top” kalau memenuhi dua syarat: sangat mengganggu atau merugikan pengguna, dan banyak situs yang melakukannya.</p>
+<p class="srcline">Sumber: <a href="https://youtu.be/VGxze7xMYJs" rel="noopener" target="_blank">Jakob Nielsen — Top 10 Web-Design Mistakes (YouTube)</a></p>
+</article>
+</section>
+
+<section aria-labelledby="kesalahan-title" class="sec pg-sky" id="kesalahan">
+<div class="sec-head reveal"><span class="kicker">Bagian 2</span><h2 id="kesalahan-title">10 Kesalahan Desain Web</h2><p class="lead">Geser amplopnya, lalu klik untuk membuka surat penjelasannya (#10 sampai #1).</p></div>
+<div class="deck" role="region" aria-roledescription="carousel" aria-label="10 kesalahan desain web">
+<div class="track" tabindex="0">
+<figure class="photo envcard lav reveal">
+<button class="env" type="button" aria-haspopup="dialog" aria-label="Buka surat: Kesalahan #10, Desain mobile di layar besar">
+<span class="back" aria-hidden="true"></span><span class="flap" aria-hidden="true"></span><span class="card2" aria-hidden="true"><svg class="cbow"><use href="#bow"/></svg><span class="ct">Desain Mobile di Layar Besar</span></span><span class="pocket" aria-hidden="true"></span>
+</button>
+<template class="src"><span class="lt-tag">Kesalahan #10</span><h3>Desain mobile di layar besar</h3><p class="lt-brief">Desain yang bagus di ponsel tidak otomatis cocok kalau tinggal diperbesar untuk layar desktop.</p><p>Ini contoh dari kesalahan yang lebih umum, yaitu tidak mendesain sesuai medium yang dipakai pengguna.</p><p>Dulu kesalahannya kebalikannya: desain desktop yang dipaksa muat di ponsel, sehingga tidak ada yang bisa disentuh. Sekarang itu jarang terjadi. Yang sering terjadi justru desain yang bagus di ponsel tetapi tinggal diperbesar untuk layar besar.</p><p>Contohnya <em>hamburger menu</em>. Di ponsel itu masuk akal karena layar kecil, tetapi di layar besar menu itu menambah satu langkah yang tidak perlu. Ikon kecil di pojok layar besar juga kurang menonjol (<em>out of sight, out of mind</em>).</p><p>Studi mereka menunjukkan orang jauh lebih jarang memakai menu di desktop kalau menunya disembunyikan di balik ikon hamburger.</p></template>
+</figure>
+<figure class="photo envcard aqua reveal">
+<button class="env" type="button" aria-haspopup="dialog" aria-label="Buka surat: Kesalahan #9, Satu gambar hero raksasa di atas lipatan layar">
+<span class="back" aria-hidden="true"></span><span class="flap" aria-hidden="true"></span><span class="card2" aria-hidden="true"><svg class="cbow"><use href="#bow"/></svg><span class="ct">Satu Gambar Hero Raksasa di Atas Lipatan Layar</span></span><span class="pocket" aria-hidden="true"></span>
+</button>
+<template class="src"><span class="lt-tag">Kesalahan #9</span><h3>Satu gambar hero raksasa di atas lipatan layar</h3><p class="lt-brief">Gambar besar yang memenuhi layar pertama membuat orang tidak sadar bahwa halaman bisa di-<em>scroll</em>.</p><p>Ini versi modern dari <em>splash screen</em> (“Welcome to my site” dengan animasi) yang dulu sudah “dibunuh” di akhir era dot-com. Nielsen menyebut idenya seperti zombie yang hidup lagi.</p><p>Layar yang penuh satu gambar menciptakan ilusi lengkap, sehingga orang tidak sadar bisa <em>scroll</em>.</p><p>Satu tombol seperti “start here” bukan komunikasi yang baik. Situs sebaiknya menunjukkan apa yang bisa dilakukan dan menawarkan beberapa pilihan.</p></template>
+</figure>
+<figure class="photo envcard sage reveal">
+<button class="env" type="button" aria-haspopup="dialog" aria-label="Buka surat: Kesalahan #8, Layout bergeser saat halaman loading">
+<span class="back" aria-hidden="true"></span><span class="flap" aria-hidden="true"></span><span class="card2" aria-hidden="true"><svg class="cbow"><use href="#bow"/></svg><span class="ct">Layout Bergeser saat Halaman Loading</span></span><span class="pocket" aria-hidden="true"></span>
+</button>
+<template class="src"><span class="lt-tag">Kesalahan #8</span><h3>Layout bergeser saat halaman loading</h3><p class="lt-brief">Elemen yang bergeser saat halaman dimuat bisa membuat pengguna salah klik.</p><p>Nielsen menyebutnya lebih ke masalah teknis. Halaman modern memuat banyak komponen dari berbagai layanan <em>cloud</em>, dan tiap komponen yang selesai diunduh menggeser elemen lain.</p><p>Selain mengganggu secara visual, ini berbahaya untuk <em>usability</em>. Pengguna tidak sabar, jadi begitu melihat yang mereka mau, langsung diklik.</p><p>Saat mereka mengklik, halaman bergeser dan di posisi itu muncul elemen lain. Komputer menganggap yang diklik adalah elemen baru itu, sehingga pengguna terbawa ke halaman atau aksi yang salah.</p></template>
+</figure>
+<figure class="photo envcard pink reveal">
+<button class="env" type="button" aria-haspopup="dialog" aria-label="Buka surat: Kesalahan #7, Ikon tanpa label">
+<span class="back" aria-hidden="true"></span><span class="flap" aria-hidden="true"></span><span class="card2" aria-hidden="true"><svg class="cbow"><use href="#bow"/></svg><span class="ct">Ikon tanpa Label</span></span><span class="pocket" aria-hidden="true"></span>
+</button>
+<template class="src"><span class="lt-tag">Kesalahan #7</span><h3>Ikon tanpa label</h3><p class="lt-brief">Gambar dan kata sama-sama bagus, tetapi keduanya bersama jauh lebih baik.</p><p>Ada dua masalah utama. Pertama, ikon yang sama atau mirip dipakai untuk arti yang berbeda di situs berbeda (contohnya ikon hati). Kedua, ikon menjadi kabur karena fitur tertentu sulit digambarkan.</p><p>Pengguna jadi khawatir karena tidak tahu apa yang terjadi kalau ikon diklik. Mereka takut tanpa sengaja mengirim pesan ke 10.000 orang atau membeli barang mahal. Menurut Nielsen, satu kata label sering menentukan seluruh kegunaan ikon itu.</p></template>
+</figure>
+<figure class="photo envcard lav reveal">
+<button class="env" type="button" aria-haspopup="dialog" aria-label="Buka surat: Kesalahan #6, Teks tidak bisa dipilih dan disalin">
+<span class="back" aria-hidden="true"></span><span class="flap" aria-hidden="true"></span><span class="card2" aria-hidden="true"><svg class="cbow"><use href="#bow"/></svg><span class="ct">Teks Tidak Bisa Dipilih dan Disalin</span></span><span class="pocket" aria-hidden="true"></span>
+</button>
+<template class="src"><span class="lt-tag">Kesalahan #6</span><h3>Teks tidak bisa dipilih dan disalin</h3><p class="lt-brief">Teks yang tidak bisa di-<em>copy-paste</em> merusak mekanisme integrasi antaraplikasi yang paling dasar.</p><p>Nielsen menyebutnya mirip kesalahan <em>coding</em>, yang sering muncul akibat cara JavaScript dipakai.</p><p>Ini merusak mekanisme integrasi utama antaraplikasi, yaitu <em>cut/copy/paste</em>, yang sudah ada sejak lama.</p><p>Orang menyalin untuk berbagai alasan, misalnya mengirim ke teman atau membuat daftar pertimbangan pembelian. Contohnya bos yang meminta rekomendasi untuk anggaran $100.000. Kalau tidak bisa disalin, produk Anda kecil kemungkinan masuk daftar pendek, sehingga bisa jadi kerugian besar.</p></template>
+</figure>
+<figure class="photo envcard aqua reveal">
+<button class="env" type="button" aria-haspopup="dialog" aria-label="Buka surat: Kesalahan #5, Input yang tidak fleksibel">
+<span class="back" aria-hidden="true"></span><span class="flap" aria-hidden="true"></span><span class="card2" aria-hidden="true"><svg class="cbow"><use href="#bow"/></svg><span class="ct">Input yang Tidak Fleksibel</span></span><span class="pocket" aria-hidden="true"></span>
+</button>
+<template class="src"><span class="lt-tag">Kesalahan #5</span><h3>Input yang tidak fleksibel</h3><p class="lt-brief">Isian berformat kaku menambah <em>error</em>, padahal komputer mudah merapikan formatnya sendiri.</p><p>Ini sering terjadi pada isian berformat khusus seperti nomor kartu kredit, nomor identitas, kode pos, dan nomor telepon. Situs sering menuntut format tertentu, biasanya tanpa spasi.</p><p>Itu melanggar prinsip psikologi <em>chunking</em>. Nomor kartu kredit 16 digit sangat rawan salah ketik kalau tidak dipecah per 4 digit, karena kalau dipecah lebih mudah dicek. Situs juga menolak hasil <em>copy-paste</em> karena formatnya tidak cocok.</p><p>Menurut Nielsen, pengguna yang harus memegang kendali. Komputer mudah saja menambah atau menghapus spasi, tanda kurung, dan tanda hubung. Input yang kaku menambah <em>error</em> dan data buruk, yang di sisi belakang (<em>fulfillment</em>) bisa menimbulkan biaya besar.</p></template>
+</figure>
+<figure class="photo envcard sage reveal">
+<button class="env" type="button" aria-haspopup="dialog" aria-label="Buka surat: Kesalahan #4, Kontras rendah atau teks terlalu kecil">
+<span class="back" aria-hidden="true"></span><span class="flap" aria-hidden="true"></span><span class="card2" aria-hidden="true"><svg class="cbow"><use href="#bow"/></svg><span class="ct">Kontras Rendah atau Teks Terlalu Kecil</span></span><span class="pocket" aria-hidden="true"></span>
+</button>
+<template class="src"><span class="lt-tag">Kesalahan #4</span><h3>Kontras rendah atau teks terlalu kecil</h3><p class="lt-brief">Mungkin masalah <em>usability</em> terbesar di web saat ini dari sisi aksesibilitas.</p><p>Ini masalah terutama bagi pengguna yang lebih tua, yang Nielsen maksud berusia 40 tahun ke atas karena penglihatan mulai menurun cepat. Remaja pun dalam studi mereka tidak mau menyipit atau mencondongkan badan untuk membaca.</p><p>Menurutnya, ini mungkin masalah <em>usability</em> terbesar di web saat ini dari sisi aksesibilitas. Masalah ini juga sudah sering muncul di daftar-daftar sebelumnya.</p></template>
+</figure>
+<figure class="photo envcard pink reveal">
+<button class="env" type="button" aria-haspopup="dialog" aria-label="Buka surat: Kesalahan #3, Link dan ekspektasi yang menyesatkan">
+<span class="back" aria-hidden="true"></span><span class="flap" aria-hidden="true"></span><span class="card2" aria-hidden="true"><svg class="cbow"><use href="#bow"/></svg><span class="ct">Link dan Ekspektasi yang Menyesatkan</span></span><span class="pocket" aria-hidden="true"></span>
+</button>
+<template class="src"><span class="lt-tag">Kesalahan #3</span><h3>Link dan ekspektasi yang menyesatkan</h3><p class="lt-brief">Link adalah janji, dan janji itu sering tidak ditepati.</p><p>Menurut Nielsen, link adalah janji: “kalau klik ini, kamu dapat itu”.</p><p>Janji sering tidak ditepati. Orang mengira mendapat artikel tetapi yang muncul video, mengira video tetapi mendapat <em>slideshow</em>, atau mengira <em>white paper</em> tetapi diarahkan ke layar registrasi.</p><p><em>Hypertext</em> adalah fitur dasar yang membuat web menjadi web, jadi link harus memberi apa yang dijanjikan.</p></template>
+</figure>
+<figure class="photo envcard lav reveal">
+<button class="env" type="button" aria-haspopup="dialog" aria-label="Buka surat: Kesalahan #2, Waktu respons lambat">
+<span class="back" aria-hidden="true"></span><span class="flap" aria-hidden="true"></span><span class="card2" aria-hidden="true"><svg class="cbow"><use href="#bow"/></svg><span class="ct">Waktu Respons Lambat</span></span><span class="pocket" aria-hidden="true"></span>
+</button>
+<template class="src"><span class="lt-tag">Kesalahan #2</span><h3>Waktu respons lambat</h3><p class="lt-brief">Pedomannya tidak berubah sejak awal web: satu detik atau kurang antara klik dan hasil.</p><p>Masalah ini sudah berkali-kali muncul di daftar. Dulu penyebabnya gambar besar di koneksi <em>dial-up</em>. Sekarang kebanyakan orang punya <em>broadband</em>, tetapi tidak semua, misalnya pengguna di pedesaan atau di ponsel dengan sinyal satu bar.</p><p>Penyebab modernnya adalah komponen dari berbagai layanan <em>cloud</em> yang lambat. Kadang halaman harus menunggu komponen terakhir sebelum bisa dipakai.</p><p>Pedomannya tidak berubah sejak awal web: satu detik atau kurang antara klik dan hasil. Kalau lebih lambat, pengguna merasa diperlambat oleh komputer, kebebasan navigasi mereka terganggu, mereka jadi jarang berpindah halaman, dan kegunaan situs menurun.</p></template>
+</figure>
+<figure class="photo envcard aqua reveal">
+<button class="env" type="button" aria-haspopup="dialog" aria-label="Buka surat: Kesalahan #1, Popup dan overlay">
+<span class="back" aria-hidden="true"></span><span class="flap" aria-hidden="true"></span><span class="card2" aria-hidden="true"><svg class="cbow"><use href="#bow"/></svg><span class="ct">Popup dan Overlay</span></span><span class="pocket" aria-hidden="true"></span>
+</button>
+<template class="src"><span class="lt-tag">Kesalahan #1</span><h3>Popup dan overlay</h3><p class="lt-brief">Popup yang beruntun menutupi apa yang dicari pengguna dan terasa seperti “diserbu”.</p><p>Dulu berupa jendela tambahan, sekarang biasanya <em>overlay</em>. Pengalaman penggunanya sama: menutupi apa yang mereka cari dan menghalangi.</p><p>Satu popup sudah buruk, tetapi sekarang biasanya beruntun. Ada promo, ajakan berlangganan <em>newsletter</em>, persetujuan <em>cookie</em> (GDPR), fitur <em>chat</em>, dan survei. Pengguna harus menutup semuanya sebelum bisa melihat apa pun, dan efek kumulatifnya terasa seperti “diserbu”.</p><p>Soal banner <em>cookie</em>, Nielsen menyebut kewajiban itu mungkin ada tetapi sangat mengganggu, dan menurut pendapatnya tidak membantu privasi sama sekali.</p><p>Kesimpulannya: “biarkan web tenang, kurangi popup”.</p></template>
+</figure>
+</div>
+<div class="deck-ui"><button class="deck-btn prev" type="button" aria-label="Kesalahan sebelumnya">‹</button><span class="deck-count" aria-live="polite">1 / 10</span><button class="deck-btn next" type="button" aria-label="Kesalahan berikutnya">›</button></div>
+</div>
+</section>
+
+<section aria-labelledby="contoh-title" class="sec pg-contoh" id="contoh">
+<div class="sec-head reveal"><span class="kicker">Bagian 3</span><h2 id="contoh-title">Contoh Before dan After</h2><p class="lead">Tiga kesalahan dari daftar di atas, sebelum dan sesudah diperbaiki.</p></div>
+
+<article class="ex reveal">
+<h3><span class="exn">Contoh 1</span> Input yang Tidak Fleksibel <em>(kesalahan #5)</em></h3>
+<div class="ba">
+<figure class="pane bad" aria-label="Sebelum: isian kartu kaku">
+<span class="chip">✕ Before</span>
+<div class="mock"><label>Nomor kartu</label><div class="fld err">4111 1111 1111 1111</div><p class="hintx err">Format tidak valid. Tulis 16 digit tanpa spasi.</p><div class="mbtn off">Bayar</div></div>
+<figcaption>Pengguna harus menghapus spasi sendiri, padahal komputer bisa melakukannya.</figcaption>
+</figure>
+<figure class="pane good" aria-label="Sesudah: isian kartu fleksibel">
+<span class="chip">✓ After</span>
+<div class="mock"><label>Nomor kartu</label><div class="fld ok">4111 1111 1111 1111</div><p class="hintx ok">Spasi dan tanda hubung diterima otomatis.</p><div class="mbtn">Bayar</div></div>
+<figcaption>Isian menerima format apa pun lalu merapikannya per 4 digit.</figcaption>
+</figure>
+</div>
+</article>
+
+<article class="ex reveal">
+<h3><span class="exn">Contoh 2</span> Ikon tanpa Label <em>(kesalahan #7)</em></h3>
+<div class="ba">
+<figure class="pane bad" aria-label="Sebelum: ikon tanpa label">
+<span class="chip">✕ Before</span>
+<div class="mock"><div class="icons"><span><i>♡</i></span><span><i>⤴</i></span><span><i>⚑</i></span><span><i>✉</i></span></div><p class="hintx err">Ikon apa yang akan terkirim kalau ditekan?</p></div>
+<figcaption>Pengguna menebak arti tiap ikon dan takut salah menekan.</figcaption>
+</figure>
+<figure class="pane good" aria-label="Sesudah: ikon dengan label">
+<span class="chip">✓ After</span>
+<div class="mock"><div class="icons"><span><i>♡</i><b>Suka</b></span><span><i>⤴</i><b>Bagikan</b></span><span><i>⚑</i><b>Laporkan</b></span><span><i>✉</i><b>Pesan</b></span></div><p class="hintx ok">Satu kata label membuat fungsinya jelas.</p></div>
+<figcaption>Gambar dan kata bekerja bersama, jadi tidak ada yang perlu ditebak.</figcaption>
+</figure>
+</div>
+</article>
+
+<article class="ex reveal">
+<h3><span class="exn">Contoh 3</span> Kontras Rendah atau Teks Terlalu Kecil <em>(kesalahan #4)</em></h3>
+<div class="ba">
+<figure class="pane bad" aria-label="Sebelum: kontras rendah">
+<span class="chip">✕ Before</span>
+<div class="mock"><p class="lowc">Syarat dan ketentuan berlaku. Dengan mendaftar, Anda menyetujui kebijakan privasi kami.</p><div class="mbtn lowb">Daftar sekarang</div></div>
+<figcaption>Teks abu-abu muda berukuran kecil di atas putih sulit dibaca.</figcaption>
+</figure>
+<figure class="pane good" aria-label="Sesudah: kontras tinggi">
+<span class="chip">✓ After</span>
+<div class="mock"><p class="highc">Syarat dan ketentuan berlaku. Dengan mendaftar, Anda menyetujui kebijakan privasi kami.</p><div class="mbtn">Daftar sekarang</div></div>
+<figcaption>Warna lebih gelap dan ukuran lebih besar, nyaman dibaca siapa pun.</figcaption>
+</figure>
+</div>
+</article>
+</section>
+
+<section aria-labelledby="kesimpulan-title" class="sec pg-blue" id="kesimpulan">
+<div class="sec-head reveal"><span class="kicker">Bagian 4</span><h2 id="kesimpulan-title">Kesimpulan</h2></div>
+<article class="card mustard solo reveal">
+<p>Menurut Nielsen, semua kesalahan itu cukup disikapi dengan “jangan lakukan”. Benang merahnya adalah arogansi: situs merasa dirinya penting dan pengguna tidak. Ia mengutip puisi <em>The Charge of the Light Brigade</em> karya Tennyson untuk menggambarkannya.</p>
+<p>Pengguna tidak akan protes atau memberi masukan, mereka langsung pergi. Mereka tidak peduli alasan di balik desain kita, mereka hanya peduli apakah mendapat yang mereka mau. Yang “mati” adalah situsnya, karena kegunaan turun dan pengunjung pergi.</p>
+<p>Nielsen berharap tidak perlu memberi ceramah serupa 10 tahun lagi dengan daftar yang sama.</p>
+</article>
+</section>
+
+<section class="cta-band reveal" aria-label="Tugas lainnya"><div><h2>Ada tugas lainnya</h2><p>Lihat daftar semua tugas yang sudah dikerjakan.</p></div><a class="btn" href="../index.html">Semua Tugas</a></section>
+</main>
+</div>
+<button aria-label="Kembali ke atas" class="totop" type="button">↑</button>
+<dialog aria-label="Pratinjau foto" id="lightbox"><div class="lb"><div class="lb-bar"><span aria-live="polite" class="lb-count"></span><button aria-label="Tutup pratinjau" class="lb-close" type="button">✕ Tutup</button></div><figure><img alt="" src=""/><figcaption></figcaption></figure><div class="lb-bar"><button aria-label="Foto sebelumnya" class="lb-prev" type="button">← Sebelumnya</button><button aria-label="Foto berikutnya" class="lb-next" type="button">Berikutnya →</button></div></div></dialog>
+<dialog aria-label="Surat penjelasan" id="letter"><div class="ltr"><div class="lt-lining" aria-hidden="true"></div><button class="lt-close" type="button" aria-label="Tutup surat">✕ Tutup</button><div class="lt-body"></div></div></dialog>
+<script src="script.js"></script>
+<script>
+(function(){var dlg=document.getElementById('letter');if(!dlg)return;var body=dlg.querySelector('.lt-body');var last=null;
+function close(){dlg.classList.remove('show');setTimeout(function(){if(dlg.open)dlg.close();if(last){last.classList.remove('open');last.focus({preventScroll:true})}},260)}
+document.querySelectorAll('.envcard .env').forEach(function(b){b.addEventListener('click',function(){
+var t=b.parentNode.querySelector('template.src');var cs=getComputedStyle(b.parentNode);['--pat','--env'].forEach(function(k){dlg.style.setProperty(k,cs.getPropertyValue(k))});body.innerHTML='';body.appendChild(t.content.cloneNode(true));last=b;b.classList.add('open');
+setTimeout(function(){dlg.showModal();requestAnimationFrame(function(){dlg.classList.add('show')});body.scrollTop=0},420)})});
+dlg.querySelector('.lt-close').addEventListener('click',close);
+dlg.addEventListener('click',function(e){if(e.target===dlg)close()});
+dlg.addEventListener('cancel',function(e){e.preventDefault();close()});})();
+</script>
+</body>
+</html>
