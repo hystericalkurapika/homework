@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ubiquitous Computing — Tugas IMK</title>
+<meta name="description" content="Blog tugas IMK: mengenal ubiquitous computing, komputasi yang ada di mana-mana tapi hampir tidak terlihat, lengkap dengan contohnya.">
+<meta name="theme-color" content="#DCCBFF">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<a class="skip" href="#apa">Lewati ke isi</a>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="flower" viewBox="0 0 50 50"><g fill="#F7A8CB" stroke="#fff" stroke-width="2"><circle cx="25" cy="11" r="9"/><circle cx="38.300" cy="20.700" r="9"/><circle cx="33.200" cy="36.300" r="9"/><circle cx="16.800" cy="36.300" r="9"/><circle cx="11.700" cy="20.700" r="9"/></g><circle cx="25" cy="26" r="7" fill="#FFE27A" stroke="#fff" stroke-width="2"/></symbol>
+<symbol id="burst" viewBox="0 0 60 60"><defs><linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD34D"/><stop offset="1" stop-color="#FF8A3D"/></linearGradient></defs><path d="M30 2l6 17 16-8-8 16 17 6-17 6 8 16-16-8-6 17-6-17-16 8 8-16L2 33l17-6-8-16 16 8Z" fill="url(#bg1)" stroke="#fff" stroke-width="2.500" stroke-linejoin="round"/></symbol>
+<symbol id="sparkle" viewBox="0 0 40 40"><path d="M20 1C21.5 12 28 18.5 39 20 28 21.5 21.5 28 20 39 18.5 28 12 21.5 1 20 12 18.5 18.5 12 20 1Z" fill="#fff" stroke="#8B7BC0" stroke-width="2" stroke-linejoin="round"/></symbol>
+<symbol id="star5" viewBox="0 0 40 40"><path d="M20 3l5 11.500 12.500 1.200-9.400 8.300 2.800 12.200L20 29.800 9.100 36.200l2.800-12.200L2.500 15.700 15 14.500Z" fill="#6CCBFF" stroke="#8B7BC0" stroke-width="2.200" stroke-linejoin="round"/></symbol>
+<symbol id="crown" viewBox="0 0 48 40"><path d="M5 32 3 11l11 9 10-15 10 15 11-9-2 21Z" fill="#FFF36B" stroke="#8B7BC0" stroke-width="2.400" stroke-linejoin="round"/><path d="M5 32h38v5H5Z" fill="#FFD84A" stroke="#8B7BC0" stroke-width="2.400" stroke-linejoin="round"/></symbol>
+<symbol id="fly" viewBox="0 0 56 48"><path d="M28 24C20 6 4 4 4 15c0 9 12 12 24 9Z" fill="#7CCBFF" stroke="#8B7BC0" stroke-width="2.200" stroke-linejoin="round"/><path d="M28 24c8-18 24-20 24-9 0 9-12 12-24 9Z" fill="#7CCBFF" stroke="#8B7BC0" stroke-width="2.200" stroke-linejoin="round"/><path d="M28 25c-9 2-16 8-12 16 3 5 10 0 12-16Z" fill="#B7E6FF" stroke="#8B7BC0" stroke-width="2.200" stroke-linejoin="round"/><path d="M28 25c9 2 16 8 12 16-3 5-10 0-12-16Z" fill="#B7E6FF" stroke="#8B7BC0" stroke-width="2.200" stroke-linejoin="round"/><path d="M28 14v22" stroke="#8B7BC0" stroke-width="3" stroke-linecap="round"/></symbol>
+<symbol id="wifi" viewBox="0 0 48 40"><path d="M4 15C16-2 32-2 44 15M11 23c8-10 18-10 26 0M18 31c4-5 8-5 12 0" fill="none" stroke="#8B7BC0" stroke-width="9" stroke-linecap="round"/><path d="M4 15C16-2 32-2 44 15M11 23c8-10 18-10 26 0M18 31c4-5 8-5 12 0" fill="none" stroke="#7BE635" stroke-width="4.500" stroke-linecap="round"/><circle cx="24" cy="37" r="3.500" fill="#7BE635" stroke="#8B7BC0" stroke-width="2"/></symbol>
+<symbol id="heart" viewBox="0 0 40 36"><path d="M20 34C6 24 2 16 2 10 2 5 6 2 10.500 2 15 2 18 5 20 8.500 22 5 25 2 29.500 2 34 2 38 5 38 10c0 6-4 14-18 24Z" fill="#FF7BE0" stroke="#8B7BC0" stroke-width="2.400" stroke-linejoin="round"/></symbol>
+<symbol id="bulb" viewBox="0 0 40 52"><path d="M20 3C10 3 4 10 4 18c0 6 3 9 6 13 1.500 2 2 4 2 6h16c0-2 .5-4 2-6 3-4 6-7 6-13C36 10 30 3 20 3Z" fill="#FFF36B" stroke="#8B7BC0" stroke-width="2.400" stroke-linejoin="round"/><path d="M13 42h14M15 48h10" stroke="#8B7BC0" stroke-width="3" stroke-linecap="round"/></symbol>
+</defs>
+</svg>
+
+<header class="nav-wrap">
+  <nav class="nav" id="home" aria-label="Navigasi utama">
+    <a class="brand" href="#home"><span>Ubiquitous Computing</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Buka menu"><span></span><span></span><span></span></button>
+    <ul id="menu" class="menu">
+      <li><a href="#apa" data-nav="apa">Pengertian</a></li>
+      <li><a href="#paradigma" data-nav="paradigma">Paradigma</a></li>
+      <li><a href="#aspek" data-nav="aspek">Aspek</a></li>
+      <li><a href="#contoh" data-nav="contoh">Contoh</a></li>
+      <li><a href="#kesimpulan" data-nav="kesimpulan">Kesimpulan</a></li>
+      <li><a class="back" href="../index.html">← Semua Tugas</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" aria-labelledby="judul">
+  <div class="poster">
+    <svg class="sq sq1" viewBox="0 0 220 120" aria-hidden="true"><defs><linearGradient id="sqg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7E5BD6"/><stop offset="1" stop-color="#FFE9E0"/></linearGradient></defs><path d="M8 40c30-34 70-30 62 6-6 28-44 34-34 8 8-22 56-22 90 0 30 20 60 14 90-16" fill="none" stroke="url(#sqg)" stroke-width="14" stroke-linecap="round"/></svg>
+    <svg class="sq sq2" viewBox="0 0 220 120" aria-hidden="true"><path d="M212 80c-30 34-70 30-62-6 6-28 44-34 34-8-8 22-56 22-90 0C64 46 34 52 4 82" fill="none" stroke="url(#sqg)" stroke-width="14" stroke-linecap="round"/></svg>
+    <svg class="ast a1" aria-hidden="true"><use href="#burst"/></svg>
+    <svg class="ast a2" aria-hidden="true"><use href="#burst"/></svg>
+    <svg class="ast a3" aria-hidden="true"><use href="#burst"/></svg>
+    <div class="paper" aria-hidden="true">
+      <div class="url">www.website.com</div>
+      <div class="mast"><b>THE UBIQUITOUS</b><i>NEWS</i></div>
+      <div class="bar">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+      <div class="cols"><span></span><span></span><span></span></div>
+    </div>
+    <svg class="lens" viewBox="0 0 300 330" aria-hidden="true">
+      <defs><radialGradient id="glass" cx=".35" cy=".3"><stop offset="0" stop-color="#fff" stop-opacity=".75"/><stop offset="1" stop-color="#fff" stop-opacity=".22"/></radialGradient><linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4F2FA"/><stop offset="1" stop-color="#A9A5BC"/></linearGradient></defs>
+      <path d="M200 200L282 306" stroke="#2B2640" stroke-width="30" stroke-linecap="round"/>
+      <path d="M192 190l22 28" stroke="url(#rim)" stroke-width="22" stroke-linecap="round"/>
+      <circle cx="120" cy="120" r="104" fill="url(#glass)" stroke="url(#rim)" stroke-width="14"/>
+      <circle cx="120" cy="120" r="97" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="3"/>
+      <use href="#wifi" x="64" y="62" width="62" height="52"/><use href="#bulb" x="140" y="74" width="40" height="52"/>
+      <g transform="translate(80 138)"><rect x="0" y="0" width="64" height="48" rx="8" fill="#fff" stroke="#8B7BC0" stroke-width="3"/><rect x="12" y="10" width="40" height="28" rx="4" fill="#BBD9F7"/><path d="M18 30l8-9 7 7 9-12" fill="none" stroke="#7E5BD6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+    </svg>
+    <div class="ttl">
+      <p class="pre">Mengenal</p>
+      <h1 id="judul"><span class="u" data-t="Ubiquitous"><i>Ubiquitous</i></span><span class="c" data-t="Computing"><i>Computing</i></span></h1>
+    </div>
+  </div>
+  <div class="introrow">
+    <span class="badge">IMK · Tugas Individu</span>
+    <p class="hand">komputer di mana-mana, tapi nggak kelihatan</p>
+    <p class="desc">Bayangkan komputer yang tidak lagi duduk manis di atas meja, tetapi menyatu dengan lampu, pintu, jam tangan, sampai kartu di dompetmu. Itulah ubiquitous computing: komputasi yang ada di mana-mana, namun hampir tidak terasa keberadaannya.</p>
+    <a class="btn" href="#apa">Mulai membaca <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<!-- 1 PENGERTIAN -->
+<section class="page pg-yellow reveal" id="apa" aria-labelledby="h-apa">
+  <header class="sh"><span class="no">1</span><h2 id="h-apa">Apa Itu Ubiquitous Computing?</h2></header>
+  <div class="two">
+    <article class="card">
+      <p><b>Ubiquitous computing</b>, sering disingkat <em>ubicomp</em>, berarti “komputasi di mana-mana”. Konsep ini menyediakan serangkaian komputer di lingkungan fisik penggunanya dengan tingkat efektivitas yang tinggi, tetapi dengan tingkat visibilitas serendah mungkin. Artinya, komputernya bekerja di sekitar kita tanpa harus kita sadari dan kita operasikan satu per satu.</p>
+      <p>Ada dua hal yang membedakannya dari komputasi yang biasa kita kenal. Pertama, komputer ditanamkan ke dunia nyata, bukan dunia nyata yang dimasukkan ke dalam komputer seperti pada <em>virtual reality</em>. Kedua, perhatian bergeser dari mesin ke tugas yang ingin diselesaikan pengguna. Karena itu, ubicomp dipandang sebagai perubahan paradigma dari <em>personal computing</em> menuju <em>physical integration</em>. Istilah lain yang sering dipakai untuk konsep ini adalah <em>pervasive computing</em>.</p>
+    </article>
+    <aside class="side">
+      <div class="meter card">
+        <p class="mt">Ciri utamanya</p>
+        <div class="row"><span>Efektivitas</span><div class="bar"><i style="--v:92%"></i></div></div>
+        <div class="row"><span>Visibilitas</span><div class="bar low"><i style="--v:12%"></i></div></div>
+        <p class="mn">Bekerja sekuat mungkin, terlihat sesedikit mungkin.</p>
+      </div>
+      <blockquote class="quote card">
+        <p>“A symbiosis of physical and electronic world in service of everyday activities.”</p>
+        <footer>Perpaduan dunia fisik dan elektronik untuk melayani aktivitas sehari-hari.</footer>
+      </blockquote>
+    </aside>
+  </div>
+
+  <h3 class="sub">Perjalanan singkatnya</h3>
+  <ol class="hist">
+    <li class="card"><b class="yr">1965</b><h4>Moore’s Law</h4><p>Gordon Moore mengamati jumlah transistor pada sirkuit terus bertambah, lalu memperkirakan perangkat elektronik akan saling terhubung dan dikendalikan secara otomatis.</p></li>
+    <li class="card"><b class="yr">1988</b><h4>Istilah ubicomp lahir</h4><p>Mark Weiser memperkenalkan istilah ubiquitous computing di Xerox PARC dan menulis kajian awal tentang konsep intinya.</p></li>
+    <li class="card"><b class="yr">1992</b><h4>Proyek InfoPad</h4><p>UC Berkeley memulai InfoPad, perangkat portabel nirkabel yang hanya menerima input dan menampilkan output, sedangkan pemrosesannya dilakukan di server.</p></li>
+  </ol>
+</section>
+
+<!-- 2 PARADIGMA -->
+<section class="page pg-blue reveal" id="paradigma" aria-labelledby="h-par">
+  <header class="sh"><span class="no">2</span><h2 id="h-par">Dari Batch Processing ke Ubiquitous Computing</h2></header>
+  <p class="intro card">Paradigma interaksi manusia dan komputer terus berubah mengikuti perkembangan komputer dan kebutuhan penggunanya. Geser pita film di bawah untuk melihat urutannya. Ubiquitous computing ada di bingkai terakhir.</p>
+
+  <div class="reelwrap">
+    <div class="canister" aria-hidden="true"><span class="cap"></span><b>UBIQUITOUS</b><i>35mm · paradigma IMK</i><span class="cap"></span></div>
+    <div class="reelbox">
+    <button class="rbtn prev" aria-label="Sebelumnya">‹</button>
+    <div class="reel" tabindex="0" aria-label="Pita film paradigma IMK">
+      <div class="cell"><article class="fr c1"><b>01</b><h3>Batch Processing</h3><span class="tg">Impersonal Computing</span><p>Pekerjaan diproses sekaligus dalam tumpukan, tanpa interaksi langsung dengan pengguna.</p></article></div>
+      <div class="cell"><article class="fr c2"><b>02</b><h3>Time-Sharing</h3><span class="tg">Interactive Computing</span><p>Satu komputer dipakai bergantian oleh banyak orang sehingga pengguna bisa berinteraksi langsung.</p></article></div>
+      <div class="cell"><article class="fr c3"><b>03</b><h3>Networking</h3><span class="tg">Community Computing</span><p>Komputer saling terhubung dan membentuk komunitas pengguna.</p></article></div>
+      <div class="cell"><article class="fr c4"><b>04</b><h3>Graphical Display</h3><span class="tg">Direct Computing</span><p>Tampilan grafis (VDU) membuat pengguna bisa memanipulasi langsung apa yang ada di layar.</p></article></div>
+      <div class="cell"><article class="fr c5"><b>05</b><h3>Mikroprosesor</h3><span class="tg">Personal Computing</span><p>Komputer cukup kecil dan terjangkau untuk dimiliki dan dipakai secara pribadi.</p></article></div>
+      <div class="cell"><article class="fr c1"><b>06</b><h3>Programming Toolkit</h3><span class="tg">Perkakas pengembang</span><p>Perangkat bantu yang memudahkan pengembang membangun perangkat lunak interaktif.</p></article></div>
+      <div class="cell"><article class="fr c2"><b>07</b><h3>GUI</h3><span class="tg">Antarmuka grafis</span><p>Jendela, ikon, dan menu menggantikan perintah teks yang harus dihafal.</p></article></div>
+      <div class="cell"><article class="fr c3"><b>08</b><h3>Metafora</h3><span class="tg">Meniru dunia nyata</span><p>Istilah seperti desktop, folder, dan tempat sampah dipakai agar komputer terasa familiar.</p></article></div>
+      <div class="cell"><article class="fr c4"><b>09</b><h3>WWW (Internet)</h3><span class="tg">Terhubung global</span><p>Informasi saling terhubung dan bisa diakses dari mana saja lewat web.</p></article></div>
+      <div class="cell"><article class="fr last"><b>10</b><h3>Ubiquitous Computing</h3><span class="tg">Physical Integration</span><p>Dunia fisik dan elektronik menyatu untuk melayani aktivitas sehari-hari.</p></article></div>
+    </div>
+    <button class="rbtn next" aria-label="Berikutnya">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- 3 ASPEK -->
+<section class="page pg-pink reveal" id="aspek" aria-labelledby="h-asp">
+  <header class="sh"><span class="no">3</span><h2 id="h-asp">3 Aspek Pendukungnya</h2></header>
+  <p class="intro card">Agar komputer bisa “menghilang” ke lingkungan, ada tiga aspek yang menopangnya.</p>
+  <div class="apps">
+    <article class="app">
+      <span class="orb o-blue" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="17" y="6" width="14" height="24" rx="7" fill="#fff" stroke="#7A3E6A" stroke-width="3"/><path d="M10 24a14 14 0 0 0 28 0M24 38v6M17 44h14" fill="none" stroke="#7A3E6A" stroke-width="3" stroke-linecap="round"/></svg></span>
+      <h3>Natural Interfaces</h3>
+      <p>Memakai cara-cara alami untuk memanipulasi data, misalnya pengenal suara (<em>voice recognizer</em>) dan <em>pen computing</em>. Gerakan, ucapan, dan tulisan menjadi input, sehingga pelan-pelan kita meninggalkan paradigma keyboard, mouse, dan layar.</p>
+    </article>
+    <article class="app">
+      <span class="orb o-pink" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="19" fill="#fff" stroke="#7A3E6A" stroke-width="3"/><circle cx="24" cy="24" r="11" fill="none" stroke="#7A3E6A" stroke-width="3"/><circle cx="24" cy="24" r="3.500" fill="#7A3E6A"/><path d="M24 2v7M24 39v7M2 24h7M39 24h7" stroke="#7A3E6A" stroke-width="3" stroke-linecap="round"/></svg></span>
+      <h3>Context-Aware Computing</h3>
+      <p>Proses komputasi tidak hanya memusatkan perhatian pada satu objek utama, tetapi juga pada hal-hal di sekitarnya. Sistem memodelkan aktivitas pengguna, mempelajari kebiasaannya, lalu menyesuaikan kinerjanya, misalnya lewat sensor yang membaca lokasi dan gerak.</p>
+    </article>
+    <article class="app">
+      <span class="orb o-lemon" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="11" y="11" width="26" height="26" rx="5" fill="#fff" stroke="#7A3E6A" stroke-width="3"/><rect x="18" y="18" width="12" height="12" rx="2" fill="#7A3E6A"/><path d="M17 4v7M24 4v7M31 4v7M17 37v7M24 37v7M31 37v7M4 17h7M4 24h7M4 31h7M37 17h7M37 24h7M37 31h7" stroke="#7A3E6A" stroke-width="3" stroke-linecap="round"/></svg></span>
+      <h3>Micro-Nano Technology</h3>
+      <p>Pemanfaatan <em>microchip</em> berukuran sangat kecil, seperti <em>Radio Frequency Identification</em> (RFID) pada kartu pintar yang kita pakai sehari-hari. Mikroprosesor yang makin kecil, penyimpanan yang makin murah, dan material baru seperti e-ink ikut mendorongnya.</p>
+    </article>
+  </div>
+</section>
+
+<!-- 4 CONTOH -->
+<section class="page pg-green reveal" id="contoh" aria-labelledby="h-con">
+  <header class="sh"><span class="no">4</span><h2 id="h-con">Contoh: Cari Komputernya!</h2></header>
+  <p class="intro card">Di kamar ini ada banyak komputer yang “menyamar”. Klik titik yang berkedip untuk melihat benda mana yang termasuk contoh ubiquitous computing.</p>
+
+  <div class="stage">
+    <div class="room">
+      <svg viewBox="0 0 800 440" role="img" aria-label="Ilustrasi kamar dengan lampu, speaker, tablet, jam tangan, pembaca kartu pintu, dan AC">
+        <defs>
+          <pattern id="stripe" width="40" height="10" patternUnits="userSpaceOnUse"><rect width="20" height="10" fill="#EFE4FF"/><rect x="20" width="20" height="10" fill="#E3D2FF"/></pattern>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9FD3FF"/><stop offset="1" stop-color="#E4F3FF"/></linearGradient>
+          <radialGradient id="glow"><stop offset="0" stop-color="#FFF36B" stop-opacity=".9"/><stop offset="1" stop-color="#FFF36B" stop-opacity="0"/></radialGradient>
+          <clipPath id="winclip"><rect x="318" y="78" width="134" height="132" rx="6"/></clipPath>
+        </defs>
+        <rect width="800" height="440" fill="url(#stripe)"/>
+        <rect y="340" width="800" height="100" fill="#FFD3EA"/>
+        <rect y="334" width="800" height="12" fill="#fff" stroke="#8B7BC0" stroke-width="3"/>
+        <!-- jendela -->
+        <rect x="300" y="60" width="170" height="168" rx="10" fill="#fff" stroke="#8B7BC0" stroke-width="4"/>
+        <g clip-path="url(#winclip)"><rect x="318" y="78" width="134" height="132" fill="url(#sky)"/>
+          <path d="M318 180c30-26 60-22 90-8s34 6 44-4v50H318Z" fill="#8FD14F"/><path d="M318 196c40-14 80-10 134 0v14H318Z" fill="#6BB82F"/>
+          <ellipse cx="360" cy="112" rx="20" ry="9" fill="#fff"/><ellipse cx="376" cy="106" rx="14" ry="10" fill="#fff"/></g>
+        <rect x="318" y="78" width="134" height="132" rx="6" fill="none" stroke="#8B7BC0" stroke-width="3"/>
+        <path d="M385 78v132" stroke="#8B7BC0" stroke-width="3"/>
+        <rect x="268" y="66" width="30" height="156" rx="6" fill="#FFB6DB" stroke="#8B7BC0" stroke-width="3.500"/><path d="M276 76v136M284 76v136M292 76v136" stroke="#fff" stroke-width="2"/>
+        <rect x="472" y="66" width="30" height="156" rx="6" fill="#FFB6DB" stroke="#8B7BC0" stroke-width="3.500"/><path d="M480 76v136M488 76v136M496 76v136" stroke="#fff" stroke-width="2"/>
+        <!-- lampu gantung -->
+        <circle cx="140" cy="128" r="62" fill="url(#glow)"/>
+        <path d="M140 0v82" stroke="#8B7BC0" stroke-width="4"/>
+        <path d="M96 128a44 44 0 0 1 88 0Z" fill="#FFF36B" stroke="#8B7BC0" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M112 128a28 28 0 0 1 14-24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="140" cy="134" r="8" fill="#fff" stroke="#8B7BC0" stroke-width="3"/>
+        <!-- rak + speaker -->
+        <rect x="40" y="262" width="210" height="14" rx="5" fill="#FFF3B8" stroke="#8B7BC0" stroke-width="4"/>
+        <rect x="68" y="276" width="10" height="26" fill="#8B7BC0" opacity=".18"/><rect x="212" y="276" width="10" height="26" fill="#8B7BC0" opacity=".18"/>
+        <rect x="68" y="196" width="54" height="66" rx="20" fill="#C9B4FF" stroke="#8B7BC0" stroke-width="4"/>
+        <circle cx="95" cy="222" r="14" fill="#fff" stroke="#8B7BC0" stroke-width="3"/><circle cx="95" cy="222" r="5" fill="#8B7BC0"/>
+        <path d="M80 204h30" stroke="#7BE635" stroke-width="5" stroke-linecap="round"/>
+        <path d="M150 262c-12 0-16-20-4-26-2-14 18-16 20-4 12-2 16 16 6 22 6 8-2 8-6 8Z" fill="#8FD14F" stroke="#8B7BC0" stroke-width="3.500" stroke-linejoin="round"/>
+        <rect x="140" y="248" width="42" height="14" rx="4" fill="#FF9FD0" stroke="#8B7BC0" stroke-width="3.500"/>
+        <!-- AC -->
+        <rect x="520" y="40" width="210" height="72" rx="18" fill="#fff" stroke="#8B7BC0" stroke-width="4"/>
+        <path d="M540 92h170" stroke="#8B7BC0" stroke-width="4" stroke-linecap="round"/><path d="M548 82h154" stroke="#B9D6FF" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="706" cy="62" r="6" fill="#7BE635" stroke="#8B7BC0" stroke-width="2.500"/>
+        <rect x="546" y="56" width="52" height="14" rx="7" fill="#CFF1FF" stroke="#8B7BC0" stroke-width="2.500"/>
+        <path d="M560 128c8 14-8 14 0 28M600 128c8 14-8 14 0 28M640 128c8 14-8 14 0 28" fill="none" stroke="#9FD3FF" stroke-width="4" stroke-linecap="round"/>
+        <!-- pintu + pembaca kartu -->
+        <rect x="652" y="170" width="120" height="176" rx="8" fill="#FFB6DB" stroke="#8B7BC0" stroke-width="4"/>
+        <rect x="668" y="188" width="88" height="62" rx="5" fill="none" stroke="#fff" stroke-width="4"/><rect x="668" y="262" width="88" height="62" rx="5" fill="none" stroke="#fff" stroke-width="4"/>
+        <circle cx="746" cy="262" r="7" fill="#FFF36B" stroke="#8B7BC0" stroke-width="3"/>
+        <rect x="610" y="228" width="30" height="50" rx="8" fill="#fff" stroke="#8B7BC0" stroke-width="4"/>
+        <circle cx="625" cy="246" r="5" fill="#7BE635" stroke="#8B7BC0" stroke-width="2.500"/>
+        <path d="M615 262c6-6 14-6 20 0M619 268c4-4 8-4 12 0" fill="none" stroke="#8B7BC0" stroke-width="2.500" stroke-linecap="round"/>
+        <!-- meja -->
+        <rect x="250" y="330" width="350" height="16" rx="6" fill="#FFF3B8" stroke="#8B7BC0" stroke-width="4"/>
+        <rect x="270" y="346" width="12" height="70" fill="#FFE27A" stroke="#8B7BC0" stroke-width="3.500"/><rect x="570" y="346" width="12" height="70" fill="#FFE27A" stroke="#8B7BC0" stroke-width="3.500"/>
+        <!-- tablet -->
+        <path d="M312 330l8-88h72l8 88Z" fill="#DCE9FF" stroke="#8B7BC0" stroke-width="4" stroke-linejoin="round"/>
+        <rect x="328" y="252" width="56" height="64" rx="6" fill="#9FD3FF" stroke="#8B7BC0" stroke-width="3"/>
+        <path d="M338 268h36M338 280h26M338 292h32" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+        <path d="M360 330l-26 0" stroke="#8B7BC0" stroke-width="4"/>
+        <!-- jam tangan -->
+        <path d="M468 286h32v-26a16 16 0 0 0-32 0Z" fill="#FF7BE0" stroke="#8B7BC0" stroke-width="3.500"/>
+        <path d="M468 322h32v26a16 16 0 0 1-32 0Z" fill="#FF7BE0" stroke="#8B7BC0" stroke-width="3.500" transform="translate(0,-34)"/>
+        <rect x="460" y="282" width="48" height="48" rx="14" fill="#fff" stroke="#8B7BC0" stroke-width="4"/>
+        <rect x="467" y="289" width="34" height="34" rx="9" fill="#8B7BC0"/>
+        <path d="M474 310l6-8 5 5 7-9" fill="none" stroke="#7BE635" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- karpet -->
+        <ellipse cx="400" cy="402" rx="150" ry="22" fill="#FFF36B" stroke="#8B7BC0" stroke-width="3.500" opacity=".95"/>
+      </svg>
+      <button class="hot" data-k="lampu" style="--x:17.5%;--y:29%" aria-label="Lampu pintar"><i></i></button>
+      <button class="hot" data-k="speaker" style="--x:11.9%;--y:52.5%" aria-label="Asisten suara"><i></i></button>
+      <button class="hot" data-k="tablet" style="--x:43%;--y:66%" aria-label="InfoPad"><i></i></button>
+      <button class="hot" data-k="jam" style="--x:60.5%;--y:70%" aria-label="Jam tangan pintar"><i></i></button>
+      <button class="hot" data-k="kartu" style="--x:79%;--y:58.5%" aria-label="Pembaca kartu RFID"><i></i></button>
+      <button class="hot" data-k="ac" style="--x:77.5%;--y:18%" aria-label="Peralatan rumah pintar"><i></i></button>
+    </div>
+
+    <article class="info card" id="info" aria-live="polite">
+      <span class="tag">Context-Aware</span>
+      <h3>Lampu pintar</h3>
+      <p>Lampu menyala saat ruangan terpakai dan menyesuaikan diri dengan situasi sekitarnya lewat sensor. Kita tidak menekan apa-apa, ruangannya yang menyesuaikan.</p>
+    </article>
+  </div>
+
+  <ul class="chips" aria-label="Daftar contoh">
+    <li><button data-k="lampu" class="on">Lampu pintar</button></li>
+    <li><button data-k="speaker">Asisten suara</button></li>
+    <li><button data-k="tablet">InfoPad</button></li>
+    <li><button data-k="jam">Jam tangan pintar</button></li>
+    <li><button data-k="kartu">Kartu RFID</button></li>
+    <li><button data-k="ac">Peralatan pintar</button></li>
+  </ul>
+</section>
+
+<!-- 5 PLUS MINUS -->
+<section class="page pg-lilac reveal" id="plus" aria-labelledby="h-pm">
+  <header class="sh"><span class="no">5</span><h2 id="h-pm">Enaknya dan Waspadanya</h2></header>
+  <div class="pm">
+    <article class="card good">
+      <h3><span aria-hidden="true">+</span> Keuntungan</h3>
+      <ul>
+        <li>Mengurangi ketergantungan pada antarmuka konvensional seperti desktop dan ponsel.</li>
+        <li>Pengalaman terasa lebih alami, responsif, dan sesuai konteks.</li>
+        <li>Teknologinya mengantisipasi dan menyesuaikan diri dengan situasi pengguna, sehingga tidak mengganggu.</li>
+        <li>Orang tanpa keterampilan komputer khusus dan orang dengan keterbatasan fisik tetap bisa memakai komputer untuk berbagai keperluan.</li>
+      </ul>
+    </article>
+    <article class="card warn">
+      <h3><span aria-hidden="true">!</span> Tantangan</h3>
+      <ul>
+        <li>Privasi dan etika menjadi faktor desain yang sangat penting, karena sistem ini mengumpulkan dan bertindak berdasarkan data pribadi yang ada di mana-mana.</li>
+        <li>Karena komputernya nyaris tak terlihat, pengguna bisa tidak sadar kapan datanya sedang dikumpulkan. Menurutku, di sinilah desain yang transparan jadi penting.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- KESIMPULAN -->
+<section class="page pg-sun reveal" id="kesimpulan" aria-labelledby="h-kes">
+  <header class="sh"><span class="no">6</span><h2 id="h-kes">Kesimpulan</h2></header>
+  <div class="chat">
+    <p class="bub me">Jadi, intinya apa?</p>
+    <div class="bub you">
+      <p>Ubiquitous computing menggeser cara kita memakai komputer: dari duduk di depan layar dengan keyboard dan mouse, menjadi komputer yang menyatu dengan lingkungan dan bekerja secara natural di belakang layar.</p>
+      <p>Paradigma IMK memang selalu dipengaruhi oleh perkembangan sistem komputer dan kebutuhan pengguna yang terus meningkat. Ubicomp menjadi inspirasi bagi komputasi yang “off the desktop”, dengan gerakan, ucapan, dan tulisan sebagai input, baik secara eksplisit maupun implisit.</p>
+      <p>Dampak baiknya terasa bagi banyak orang, termasuk mereka yang belum terampil memakai komputer dan mereka yang punya keterbatasan fisik. Di sisi lain, privasi perlu dijaga sejak awal perancangan.</p>
+    </div>
+    <div class="fake" aria-hidden="true"><span>Enter a message.</span><b></b></div>
+  </div>
+</section>
+
+<!-- REFERENSI -->
+<section class="page pg-ref reveal" id="referensi" aria-labelledby="h-ref">
+  <header class="sh"><span class="no">★</span><h2 id="h-ref">Referensi</h2></header>
+  <ol class="reflist">
+    <li>Arm. (t.t.). <em>Ubiquitous computing</em>. Arm Glossary. https://www.arm.com/glossary/ubiquitous-computing</li>
+    <li>BINUS School of Computer Science. (2018, 20 Desember). <em>Apa itu ubiquitous computing?</em> https://socs.binus.ac.id/2018/12/20/apa-itu-ubiquitous-computing/</li>
+    <li>Scribd. (t.t.). <em>Ubiquitous computing</em> [Dokumen .docx]. https://www.scribd.com/document/349234928/53069882-UBIQUITOUS-COMPUTING-docx</li>
+    <li>Wijaya, I. S. (t.t.). <em>Paradigma IMK &amp; ubiquitous computing</em> [Slide perkuliahan Interaksi Manusia dan Komputer].</li>
+  </ol>
+</section>
+
+<section class="cta">
+  <p>Ada tugas lainnya</p>
+  <a class="btn" href="../index.html">← Kembali ke semua tugas</a>
+</section>
+</main>
+
+<footer class="foot"><p>Salma Nur Safitri · NIM 8020250200 · IMK Tugas Individu</p></footer>
+<button class="totop" aria-label="Kembali ke atas">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
