@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Memori Komputer | Salma Nur Safitri</title>
+<meta name="description" content="Tugas Arsitektur dan Organisasi Komputer: pengertian memori, macam-macam memori, evolusi memori, serta perbedaan EDO RAM, SDRAM, dan DDR SDRAM.">
+<link rel="preload" href="fonts/fredoka-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="star" viewBox="0 0 100 100"><polygon points="50.0,0.0 62.9,32.2 97.6,34.5 70.9,56.8 79.4,90.5 50.0,72.0 20.6,90.5 29.1,56.8 2.4,34.5 37.1,32.2"/></symbol></defs></svg>
+<header class="top"><a class="brand" href="#atas">Memori Komputer</a><button class="nav-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button></header>
+<nav class="menu" id="menu" aria-label="Menu utama"><a href="#pengertian" data-nav><b>1</b><span>Apa itu memory?</span></a><a href="#macam" data-nav><b>2</b><span>Macam-macam memory</span></a><a href="#evolusi" data-nav><b>3</b><span>Evolusi memori</span></a><a href="#perbedaan" data-nav><b>4</b><span>EDO, SDRAM, DDR</span></a><a href="#referensi" data-nav><b>★</b><span>Referensi</span></a></nav>
+<div class="progress" aria-hidden="true"></div>
+<main id="atas">
+<section class="hero" aria-label="Pembuka">
+ <svg class="spk" style="left:8%;top:22%;width:34px;height:34px;animation-delay:0s" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0C21.5 12 28 18.5 40 20 28 21.5 21.5 28 20 40 18.5 28 12 21.5 0 20 12 18.5 18.5 12 20 0Z"/></svg><svg class="spk" style="left:90%;top:16%;width:26px;height:26px;animation-delay:1s" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0C21.5 12 28 18.5 40 20 28 21.5 21.5 28 20 40 18.5 28 12 21.5 0 20 12 18.5 18.5 12 20 0Z"/></svg><svg class="spk" style="left:78%;top:46%;width:20px;height:20px;animation-delay:2s" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0C21.5 12 28 18.5 40 20 28 21.5 21.5 28 20 40 18.5 28 12 21.5 0 20 12 18.5 18.5 12 20 0Z"/></svg><svg class="spk" style="left:14%;top:54%;width:22px;height:22px;animation-delay:0.6s" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0C21.5 12 28 18.5 40 20 28 21.5 21.5 28 20 40 18.5 28 12 21.5 0 20 12 18.5 18.5 12 20 0Z"/></svg><svg class="spk" style="left:50%;top:10%;width:18px;height:18px;animation-delay:1.6s" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0C21.5 12 28 18.5 40 20 28 21.5 21.5 28 20 40 18.5 28 12 21.5 0 20 12 18.5 18.5 12 20 0Z"/></svg>
+ <div class="wrap">
+   <h1 class="ttl"><span class="a" data-t="Memori">Memori</span><span class="b" data-t="Komputer">Komputer</span></h1>
+  <span class="ribbon">Yuk, kenali bagaimana komputer menyimpan data!</span>
+  <div class="herofig"><img src="assets/hero.png" alt="Ilustrasi modul RAM dan chip di atas panggung" width="1000" height="813"></div>
+ </div>
+ </section>
+
+<section class="sec wrap" id="pengertian">
+ <div class="sh  reveal"><span class="t">Apa itu Memory?</span></div>
+ <div class="one">
+  <article class="card reveal"><div>
+   <p class="just">Memori adalah wadah, tempat, atau ruang penyimpanan di dalam sistem komputer untuk menyimpan data, program, dan instruksi yang dibutuhkan oleh komputer.</p>
+   <p class="just" style="margin-top:.8em">Sebelum diolah oleh otak komputer (CPU atau prosesor), data tersebut wajib mampir dan ditaruh dulu di dalam memori ini. Tanpa memori, prosesor tidak punya ruang gerak untuk mengerjakan apa pun.</p></div></article>
+  <div class="spinbox reveal"><div class="ring"></div><img class="spin" src="assets/spin/r00.webp" alt="Modul RAM 3D, geser untuk memutar" width="420" height="180" draggable="false"><span class="spinhint">Geser untuk memutar 360°</span></div>
+ </div>
+</section>
+
+<section class="sec wrap" id="macam">
+ <div class="sh b reveal"><span class="t">Macam-macam Memory</span></div>
+ <p class="just reveal" style="text-align:center;text-align-last:center;max-width:720px;margin:0 auto 22px">Memori disusun berjenjang. Makin dekat dengan prosesor, makin cepat tetapi makin kecil kapasitasnya.</p>
+ <div class="stack two">
+  <article class="card reveal"><div class="ic yl"><img src="assets/register.png" alt="" width="120" height="100"></div><div><h3>Register Memory</h3>
+   <p class="just">Ini adalah memori kasta tertinggi soal kecepatan karena letaknya menempel langsung di dalam chip CPU atau prosesor. Kapasitasnya hanya cukup menampung beberapa bit atau byte data, tetapi aksesnya langsung tanpa jeda. Murni untuk memegang data atau alamat instruksi yang detik itu juga lagi dihitung oleh prosesor. Contohnya <i>Instruction Register</i> atau <i>Memory Address Register</i>.</p>
+   <div class="meter"><div>Kecepatan <svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="on" aria-hidden="true"><use href="#star"/></svg></div><div>Kapasitas <svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="off" aria-hidden="true"><use href="#star"/></svg><svg class="off" aria-hidden="true"><use href="#star"/></svg><svg class="off" aria-hidden="true"><use href="#star"/></svg></div></div></div></article>
+  <article class="card reveal"><div class="ic pk"><img src="assets/cache.png" alt="" width="120" height="100"></div><div><h3>Cache Memory</h3>
+   <p class="just">Posisinya ada di tengah-tengah, menjembatani antara CPU yang kerjanya super cepat dengan memori utama yang lebih lambat. Cache menyimpan salinan data yang paling sering dicari oleh CPU, jadi prosesor tidak perlu mengambil data ke memori utama sehingga kinerja komputer jauh lebih mulus.</p>
+   <div class="meter"><div>Kecepatan <svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="off" aria-hidden="true"><use href="#star"/></svg></div><div>Kapasitas <svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="off" aria-hidden="true"><use href="#star"/></svg><svg class="off" aria-hidden="true"><use href="#star"/></svg></div></div></div></article>
+  <article class="card full reveal"><div class="ic pu"><img src="assets/ram.png" alt="" width="120" height="100"></div><div><h3>Memori Utama</h3>
+   <p class="just">Memori utama dipakai untuk menyimpan data dan program aktif. Memori ini dibagi menjadi dua jenis.</p>
+   <div class="meter"><div>Kecepatan <svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="off" aria-hidden="true"><use href="#star"/></svg><svg class="off" aria-hidden="true"><use href="#star"/></svg></div><div>Kapasitas <svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="off" aria-hidden="true"><use href="#star"/></svg></div></div></div>
+   <div class="subs">
+    <div class="sub"><div class="ic bl"><img src="assets/ram.png" alt="" width="120" height="100"></div><div><b>a) RAM (Random Access Memory)</b><p class="just">Tempat naruh aplikasi yang lagi dibuka. Sifatnya sementara sehingga begitu aliran listrik mati atau komputer restart, semua data hilang.</p></div></div>
+    <div class="sub"><div class="ic mt"><img src="assets/rom.png" alt="" width="120" height="100"></div><div><b>b) ROM (Read Only Memory)</b><p class="just">Memori yang sifatnya permanen dan isinya sudah ditanam dari pabrik. Data di sini tidak akan hilang walau listrik mati, karena tugasnya menyimpan program dasar seperti BIOS untuk membangunkan semua komponen komputer saat pertama kali tombol power dinyalakan.</p></div></div>
+   </div></article>
+  <article class="card full reveal"><div class="ic bl"><img src="assets/hdd.png" alt="" width="120" height="100"></div><div><h3>Sekunder Memory</h3>
+   <p class="just">Kecepatannya paling lambat dibandingkan tiga memori di atas, tetapi kapasitasnya besar sekali dengan harga yang mudah dijangkau. Data yang disimpan akan tetap aman meskipun komputer dimatikan. Contohnya <i>Hard Disk</i>, SSD, dan <i>flashdisk</i> yang sering dipakai sehari-hari.</p>
+   <div class="meter"><div>Kecepatan <svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="off" aria-hidden="true"><use href="#star"/></svg><svg class="off" aria-hidden="true"><use href="#star"/></svg><svg class="off" aria-hidden="true"><use href="#star"/></svg></div><div>Kapasitas <svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="on" aria-hidden="true"><use href="#star"/></svg><svg class="on" aria-hidden="true"><use href="#star"/></svg></div></div></div></article>
+ </div>
+</section>
+
+<section class="sec wrap" id="evolusi">
+ <div class="sh  reveal"><span class="t">Evolusi Memori</span></div>
+ <p class="just reveal" style="text-align:center;text-align-last:center;max-width:720px;margin:0 auto 20px">Ikuti rute dari generasi pertama sampai sekarang. Klik pin untuk membaca penjelasannya.</p>
+ <div class="map reveal" role="group" aria-label="Peta rute evolusi memori">
+  <button class="pin p1" type="button" style="--dx:14%;--dy:90%;--mx:50%;--my:27%;--dl:0.0s" aria-pressed="false" aria-label="Generasi 1, 1940-an"><i class="seg" aria-hidden="true"></i><span class="bd"><img src="assets/tube.png" alt="" width="80" height="80"></span><span class="lb">Gen 1 · 1940-an</span></button><button class="pin p2" type="button" style="--dx:38%;--dy:90%;--mx:50%;--my:49%;--dl:0.4s" aria-pressed="false" aria-label="Generasi 2, 1950-an"><i class="seg" aria-hidden="true"></i><span class="bd"><img src="assets/core.png" alt="" width="80" height="80"></span><span class="lb">Gen 2 · 1950-an</span></button><button class="pin p3" type="button" style="--dx:62%;--dy:90%;--mx:50%;--my:71%;--dl:0.8s" aria-pressed="false" aria-label="Generasi 3, 1970-an"><i class="seg" aria-hidden="true"></i><span class="bd"><img src="assets/chip.png" alt="" width="80" height="80"></span><span class="lb">Gen 3 · 1970-an</span></button><button class="pin p4" type="button" style="--dx:86%;--dy:90%;--mx:50%;--my:93%;--dl:1.2000000000000002s" aria-pressed="false" aria-label="Generasi 4, 1980-an+"><i class="seg" aria-hidden="true"></i><span class="bd"><img src="assets/ddr.png" alt="" width="80" height="80"></span><span class="lb">Gen 4 · 1980-an+</span></button>
+ </div>
+ <div class="panel" id="panel" aria-live="polite">
+  <p class="hint" id="hint">Belum ada yang dipilih. Klik salah satu pin di peta untuk membaca generasinya.</p>
+  <article class="pane" id="pane0" hidden><div class="ph"><div class="ic yl"><img src="assets/tube.png" alt="" width="120" height="100"></div><div><h3>Generasi Pertama</h3><span class="tag">Era Tabung Vakum</span><span class="yr">1940-an – awal 1950-an</span></div></div><p class="just">Di masa awal komputer modern seperti ENIAC dan mesin IAS rancangan John von Neumann, sistem penyimpanan datanya masih mengandalkan komponen tabung hampa udara (<i>vacuum tubes</i>) dan sirkuit <i>delay line</i>. Secara fisik, memori di era ini ukurannya raksasa, gampang panas, boros listrik, dan sering rusak. Padahal kapasitas penyimpanannya cuma sanggup menampung hitungan ratusan hingga ribuan <i>word</i> data saja.</p></article><article class="pane" id="pane1" hidden><div class="ph"><div class="ic pk"><img src="assets/core.png" alt="" width="120" height="100"></div><div><h3>Generasi Kedua</h3><span class="tag">Era Transistor dan Magnetic Core Memory</span><span class="yr">pertengahan 1950-an – 1960-an</span></div></div><p class="just">Teknologi penyimpanan bergeser ke memori inti magnetik (<i>magnetic core memory</i>). Bentuknya berupa ribuan cincin magnet super kecil yang dirajut dengan kawat halus, di mana arah medan magnet pada tiap cincin mewakili nilai biner 0 atau 1. Inovasi ini jadi lompatan besar karena ukurannya jauh lebih ringkas, akses datanya lebih cepat, dan sifatnya permanen sehingga data tidak hilang saat listrik mati.</p></article><article class="pane" id="pane2" hidden><div class="ph"><div class="ic mt"><img src="assets/chip.png" alt="" width="120" height="100"></div><div><h3>Generasi Ketiga</h3><span class="tag">IC dan Lahirnya Chip Semikonduktor</span><span class="yr">akhir 1960-an – 1970-an</span></div></div><p class="just">Penemuan <i>Integrated Circuit</i> (IC) bikin komponen elektronik bisa dipadatkan ke dalam kepingan silikon kecil. Pada tahun 1970, Fairchild dan Intel mulai memperkenalkan chip memori semikonduktor komersial pertama (seperti Intel 1103) yang langsung menggeser dominasi <i>magnetic core memory</i>. Di era inilah konsep memori utama modern mulai terbentuk melalui chip RAM (baik SRAM maupun DRAM) dan ROM yang kapasitasnya sudah bisa terus dilipatgandakan mengikuti hukum Moore (<i>Moore's Law</i>).</p></article><article class="pane" id="pane3" hidden><div class="ph"><div class="ic pu"><img src="assets/ddr.png" alt="" width="120" height="100"></div><div><h3>Generasi Keempat</h3><span class="tag">Sinkronisasi, Cache, dan Keluarga DDR</span><span class="yr">1980-an – sekarang</span></div></div><p class="just">Seiring munculnya mikroprosesor yang kecepatannya melesat tajam, muncul masalah klasik bernama <i>processor-memory speed mismatch</i> (kecepatan memori jauh tertinggal dibanding kecepatan prosesor). Untuk mengatasinya, arsitektur memori berevolusi ke dua arah, yaitu:</p><ol><li class="just"><b>Penambahan hierarki cache.</b> Menanamkan memori berkecepatan super tinggi (SRAM) langsung di dalam kepingan chip prosesor (L1, L2, L3 <i>cache</i>) sebagai jembatan data instan.</li><li class="just"><b>Evolusi DRAM berkecepatan tinggi.</b> Memori utama berkembang dari model asinkron lawas (seperti FPM dan EDO RAM) menuju SDRAM yang bekerja disinkronkan dengan detak (<i>clock</i>) sistem, lalu berevolusi ke keluarga DDR SDRAM (<i>Double Data Rate</i>) yang mampu mentransfer data dua kali lipat dalam satu siklus <i>clock</i> dengan tegangan listrik yang makin irit.</li></ol></article>
+  <div class="nv"><button type="button" id="prev">← Sebelumnya</button><button type="button" id="next">Berikutnya →</button></div>
+ </div>
+</section>
+
+<section class="sec wrap" id="perbedaan">
+ <div class="sh b reveal"><span class="t">EDO, SDRAM, dan DDR SDRAM</span></div>
+ <div class="three">
+  <article class="card reveal"><div class="ic yl"><img src="assets/edo.png" alt="" width="120" height="100"></div><div><span class="k">Pertengahan 1990-an</span><h3>EDO RAM</h3>
+   <p class="just"><i>Extended Data Out</i> RAM bekerja secara asinkron, artinya tidak mengikuti detak <i>clock</i> sistem. Keunggulannya, chip tidak mematikan keluaran data saat sinyal CAS naik, sehingga data berikutnya sudah bisa mulai diambil sebelum data sebelumnya selesai dikirim. Akses data jadi sekitar 40% lebih cepat dibanding pendahulunya, FPM RAM. Modulnya berupa SIMM 72 pin, umumnya bertegangan 5 volt.</p></div></article>
+  <article class="card reveal"><div class="ic bl"><img src="assets/sdr.png" alt="" width="120" height="100"></div><div><span class="k">Akhir 1990-an</span><h3>SDRAM</h3>
+   <p class="just"><i>Synchronous DRAM</i> bekerja selaras dengan <i>clock</i> sistem, sehingga prosesor tahu persis kapan data siap dan perintah bisa disusun berurutan (<i>pipelining</i>). SDRAM mengirim satu data setiap siklus <i>clock</i>, sedangkan EDO butuh dua sampai tiga siklus per data. Modulnya DIMM 168 pin dengan tegangan 3,3 volt dan tersedia dalam PC66, PC100, dan PC133.</p></div></article>
+  <article class="card reveal"><div class="ic pk"><img src="assets/ddr.png" alt="" width="120" height="100"></div><div><span class="k">Awal 2000-an</span><h3>DDR SDRAM</h3>
+   <p class="just"><i>Double Data Rate</i> SDRAM mentransfer data pada tepi naik dan tepi turun sinyal <i>clock</i>, sehingga dalam satu siklus ada dua kali transfer tanpa menaikkan frekuensi <i>clock</i>. Modulnya DIMM 184 pin dengan tegangan 2,5 volt yang lebih irit, dan tersedia dalam DDR-200 sampai DDR-400 (PC-1600 sampai PC-3200).</p></div></article>
+ </div>
+ <div class="tw reveal" tabindex="0" role="region" aria-label="Tabel perbandingan"><table>
+  <thead><tr><th>Perbandingan</th><th>EDO RAM</th><th>SDRAM</th><th>DDR SDRAM</th></tr></thead>
+  <tbody>
+   <tr><th>Cara kerja</th><td>Asinkron, tidak terikat <i>clock</i></td><td>Sinkron dengan <i>clock</i> sistem</td><td>Sinkron, dua transfer per siklus <i>clock</i></td></tr>
+   <tr><th>Bentuk modul</th><td>SIMM 72 pin</td><td>DIMM 168 pin</td><td>DIMM 184 pin</td></tr>
+   <tr><th>Tegangan</th><td>5 V (sebagian 3,3 V)</td><td>3,3 V</td><td>2,5 V</td></tr>
+   <tr><th>Kecepatan bus</th><td>33 sampai 66 MHz</td><td>66, 100, dan 133 MHz</td><td>100 sampai 200 MHz (200 sampai 400 MT/s)</td></tr>
+   <tr><th>Data per siklus <i>clock</i></th><td>Sekitar satu data per 2 sampai 3 siklus</td><td>Satu data</td><td>Dua data</td></tr>
+   <tr><th>Bandwidth puncak teoretis</th><td>Sekitar 264 MB/s</td><td>533 MB/s (PC66), 800 MB/s (PC100), 1.066 MB/s (PC133)</td><td>1,6 GB/s (PC-1600) sampai 3,2 GB/s (PC-3200)</td></tr>
+   <tr><th>Kinerja</th><td>Cukup baik pada bus 66 MHz, tetapi tertinggal jauh pada bus 100 MHz ke atas</td><td>Lebih cepat dari EDO pada bus tinggi dan lebih stabil bersama prosesor modern</td><td>Terbaik dari ketiganya, dengan bandwidth sampai tiga kali lipat PC133</td></tr>
+  </tbody></table></div>
+ <div class="bars reveal">
+  <h3>Perbandingan Bandwidth Puncak</h3>
+  <p class="n">Angka teoretis dalam MB/s, dihitung dari lebar bus dikali kecepatan transfer.</p>
+  <div class="bar"><span>EDO RAM (66 MHz)</span><div class="t"><i style="--w:8.3%;background:linear-gradient(90deg,#FFD08A,#FF9A4D)"></i></div></div>
+  <div class="bar"><span>SDRAM PC133</span><div class="t"><i style="--w:33.3%;background:linear-gradient(90deg,#A9D6FF,#5AA8F0)"></i></div></div>
+  <div class="bar"><span>DDR-400 (PC-3200)</span><div class="t"><i style="--w:100%;background:linear-gradient(90deg,#FFB3DC,#F060A8)"></i></div></div>
+  <p class="n" style="margin:.7em 0 0">EDO ≈ 264 MB/s · PC133 ≈ 1.066 MB/s · PC-3200 ≈ 3.200 MB/s</p>
+ </div>
+</section>
+
+<section class="sec wrap">
+ <div class="note reveal"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 88C20 66 8 48 8 32a22 22 0 0 1 42-9 22 22 0 0 1 42 9c0 16-12 34-42 56Z"/></svg><p>Dari tabung vakum sampai DDR, bentuk memori terus berubah. Tugasnya tetap sama: menyimpan data yang dibutuhkan prosesor.</p></div>
+</section>
+
+<section class="sec wrap ref" id="referensi">
+ <div class="sh  reveal"><span class="t">Referensi</span></div>
+ <div class="refcard reveal"><ol>
+  <li>Tom's Hardware. (n.d.). <i>RAM guide: EDO (HyperPage Mode)</i>. https://www.tomshardware.com/reviews/ram-guide,89-6.html</li>
+  <li>Wikipedia. (n.d.). <i>PC100</i>. https://en.wikipedia.org/wiki/PC100</li>
+  <li>bit-tech. (n.d.). <i>The secrets of PC memory, part 3: The first generation, DDR1</i>. https://bit-tech.net/reviews/tech/memory/the_secrets_of_pc_memory_part_3/2/</li>
+ </ol></div>
+</section>
+</main>
+<section class="sec wrap"><div class="cta reveal" aria-label="Tugas lainnya"><div><h2>Ada tugas lainnya</h2><p>Lihat daftar semua tugas yang sudah dikerjakan.</p></div><a class="btn" href="../index.html">Semua Tugas</a></div></section>
+<button class="totop" aria-label="Kembali ke atas">↑</button>
+<script src="script.js"></script>
+</body></html>
